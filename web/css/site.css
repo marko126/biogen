@@ -1,3 +1,27 @@
+@font-face { 
+    font-family: Nexa Light; 
+    src: url('fonts/NexaLight.ttf');
+}
+@font-face { 
+    font-family: Nexa Bold; 
+    src: url('fonts/NexaBold.ttf');
+}
+@font-face { 
+    font-family: Din Pro Regular; 
+    src: url('fonts/DinProRegular.ttf');
+}
+@font-face { 
+    font-family: Helvetica Neue LT Std; 
+    src: url('fonts/HelveticaNeueLTStd.ttf');
+}
+@font-face { 
+    font-family: Mari Bold; 
+    src: url('fonts/MariBold.ttf');
+}
+@font-face { 
+    font-family: Minio Pro Regular; 
+    src: url('fonts/MinioProRegular.ttf');
+}
 html,
 body {
     height: 100%;
@@ -6,8 +30,8 @@ body {
 .wrap {
     min-height: 100%;
     height: auto;
-    margin: 0 auto -60px;
-    padding: 0 0 60px;
+    margin: 0 auto -44px;
+    padding: 0 0 44px;
 }
 
 .wrap > .container {
@@ -15,10 +39,19 @@ body {
 }
 
 .footer {
-    height: 60px;
-    background-color: #f5f5f5;
+    font-family: Nexa Light;
+    height: 44px;
+    background-color: #ffffff;
     border-top: 1px solid #ddd;
-    padding-top: 20px;
+    padding-top: 2px;
+}
+
+.footer .pull-right {
+    margin: 0 20px 0 0;
+}
+
+.footer .pull-right img {
+    margin-left: 5px;
 }
 
 .jumbotron {
