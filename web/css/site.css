@@ -47,7 +47,7 @@ body {
 }
 
 .footer .pull-right {
-    margin: 0 20px 0 0;
+    margin: 5px 20px 0 0;
 }
 
 .footer .pull-right img {
@@ -205,4 +205,19 @@ a.desc:after {
 .padding-30 {
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.slider .category-item {
+    width: 100%;
+    text-align: left;
+    color: #000;
+    font-size: 24px;
+}
+
+.slider {
+    font-family: Nexa Light;
+}
+
+.category-item ul li {
+    margin-bottom: 20px;
 }

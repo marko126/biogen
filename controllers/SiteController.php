@@ -123,4 +123,25 @@ class SiteController extends Controller
     {
         return $this->render('categories');
     }
+    
+    /**
+     * 
+     * @param type $id
+     * @return type
+     */
+    public function actionCategory($id)
+    {
+        if ($id < 1 && $id > 6) {
+            return $this->redirect('site/categories');
+        }
+        
+        $this->layout = 'categories';
+        
+        $category = Yii::$app->settings->categories[$id];
+        
+        return $this->render('category', [
+            'id' => $id,
+            'category' => $category
+        ]);
+    }
 }

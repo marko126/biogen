@@ -39,7 +39,9 @@ $config = [
             ],
         ],
         'db' => $db,
-        
+        'settings' => [
+            'class' => 'app\components\Settings'
+        ],
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => true,
@@ -47,7 +49,13 @@ $config = [
             'rules' => [
             ],
         ],
-        
+        'assetManager' => [
+            'bundles' => [
+                'yii\web\JqueryAsset' => [
+                    'js'=>[]
+                ],
+            ],
+        ],
     ],
     'params' => $params,
 ];
