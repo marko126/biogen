@@ -5,7 +5,6 @@
 
 use yii\helpers\Html;
 use app\assets\AppAsset;
-use yii\helpers\Url;
 
 AppAsset::register($this);
 ?>
@@ -33,14 +32,8 @@ AppAsset::register($this);
 
 <footer class="footer">
     
-        <p class="pull-left">
-            <?php if (Yii::$app->controller->id == 'site' && Yii::$app->controller->action->id == 'categories'): ?>
-            <a href="<?= Url::toRoute('site/settings') ?>">
-                <img src="<?= Yii::getAlias('@web') . '/images/categories/settings-icon.png' ?>" style="height: 30px" />
-            </a>
-            <?php endif; ?>
-        </p>
-        <p class="pull-right">I samarbejde med<img src="<?= Yii::getAlias('@web') . '/images/Biogen-logo.png' ?>" style="height: 40px" /></p>
+        <p class="pull-left"></p>
+        <p class="pull-right"></p>
     
 </footer>
 

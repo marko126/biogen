@@ -115,12 +115,12 @@ class SiteController extends Controller
     }
 
     /**
-     * Displays about page.
+     * Displays categories page.
      *
      * @return string
      */
-    public function actionAbout()
+    public function actionCategories()
     {
-        return $this->render('about');
+        return $this->render('categories');
     }
 }
