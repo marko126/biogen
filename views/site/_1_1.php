@@ -1,5 +1,5 @@
-<div class="category-item">
-    <div class="col-lg-8">
+<div class="category-item slide-1-1">
+    <div class="col-lg-8 slide-part-left">
         <ul>
             <li>Multipel sclerose (MS) eller Dissimineret sclerose (DS)<br>(Samme sygdom, to navne)</li>
             <li>Sygdom i centralnervesystemet <br>(CNS = hjerne og rygmarv)</li>
@@ -9,8 +9,8 @@
             <li>Nervevævet skades</li>
         </ul>
     </div>
-    <div class="col-lg-4">
-        <img src="<?= Yii::getAlias('@web') . '/images/categories/1-1.png' ?>" style="width: 75%; float: right" />
+    <div class="col-lg-4 slide-part-right">
+        <img src="<?= Yii::getAlias('@web') . '/images/categories/1-1.gif' ?>" style="width: 85%; float: right" />
     </div>
     
 </div>
