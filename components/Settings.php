@@ -19,7 +19,16 @@ class Settings extends Component {
                     5 => 'Hvad er<br> plak',
                     6 => 'Genkend<br> et attak'
                 ]
-            ]
+            ],
+            2 => [
+                'title' => 'årsager til<br> Multipel<br> Sclerose',
+                'subcategories' => [
+                    1 => 'årsagen til sclerose er ukendt',
+                    2 => 'risiko hos<br> slægtninge',
+                    3 => 'ikke ét<br> ms gen',
+                    4 => 'kendte <br>miljøfaktorer'
+                ]
+            ],
         ];
     }
 }

@@ -7,10 +7,10 @@
         To nøgler passer til samme lås 
     </div>
     <div class="col-lg-10">
-        <img src="<?= Yii::getAlias('@web') . '/images/categories/1-3-1.gif' ?>" style="width: 100%;"/>
+        <img src="<?= Yii::getAlias('@web') . '/images/categories/1-3-1.gif' ?>" />
     </div>
     <div class="col-lg-2">
-        <img src="<?= Yii::getAlias('@web') . '/images/categories/1-3-2.png' ?>" style="width: 100%;"/>
+        <img src="<?= Yii::getAlias('@web') . '/images/categories/1-3-2.png' ?>" />
         IMMUNSYSTEMET
     </div>
     <div class="col-lg-7 slide-part-left">

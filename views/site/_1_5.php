@@ -9,6 +9,6 @@
         </ul>
     </div>
     <div class="col-lg-5 slide-part-right">
-        <img src="<?= Yii::getAlias('@web') . '/images/categories/1-5.png' ?>" style="width: 80%;" />
+        <img src="<?= Yii::getAlias('@web') . '/images/categories/1-5.png' ?>" />
     </div>
 </div>
