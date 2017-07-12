@@ -50,3 +50,9 @@ function setPopupEvent(name, btnId, closeId) {
         }
     }
 }
+
+function toggleNerves() {
+    $('.toggle').fadeToggle(200);
+    //$('#damaged-myelin').fadeToggle(200);
+    //$('#broken-nerve-wire').fadeToggle(200);
+}

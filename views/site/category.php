@@ -53,6 +53,10 @@ $this->registerJs("
         $('#popup-1-6-info').on('click', function(){
             setPopupEvent('popup-1-6', 'popup-1-6-info', 'popup-1-6-close');
         });
+        
+        $('#slide-1-2-toggler').on('click', function(){
+            toggleNerves();
+        });
     });
 ");
 

@@ -231,8 +231,52 @@ a.desc:after {
     float: right;
 }
 
-.slide-1-2 {
-    
+.slide-1-2-title {
+    font-family: Nexa Bold;
+    font-size: 30px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+.slide-1-2 .slide-first-row .slide-1-2-title {
+    color: #8cc540;
+}
+
+#slide-1-2-toggler {
+    cursor: pointer;
+}
+
+.toggle {
+    position: absolute;
+}
+
+#temp-1-2 {
+    display: none;
+}
+
+.slide-1-2 .slide-second-row .slide-1-2-title {
+    color: #2da9e1;
+}
+
+.slide-1-2 .slide-third-row .slide-1-2-title {
+    color: #e14b12;
+}
+
+.slide-1-2 .slide-first-row, .slide-1-2 .slide-second-row, .slide-1-2 .slide-third-row {
+    margin-top: 30px;
+}
+
+.slide-1-2 .slide-third-row {
+    display: none;
+}
+
+.slide-1-2-body {
+    font-size: 26px;
+    color: #3a3734;
+}
+
+.slide-1-2 img {
+    width: 100%;
 }
 
 .slide-1-3 p {
