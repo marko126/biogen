@@ -29,6 +29,16 @@ class Settings extends Component {
                     4 => 'kendte <br>miljøfaktorer'
                 ]
             ],
+            3 => [
+                'title' => 'Hvordan<br> rammer<br> MS',
+                'subcategories' => [
+                    1 => 'forekomst <br>af ms i danmark',
+                    2 => 'hvem rammer <br>multipel sclerose',
+                    3 => 'øget risiko <br>blandt kvinder',
+                    4 => 'geografisk <br>udbredning i verden',
+                    5 => 'miljøfaktorer & <br>immigrationsstudier'
+                ]
+            ],
         ];
     }
 }
