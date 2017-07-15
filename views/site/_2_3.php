@@ -1,9 +1,9 @@
 <div class="category-item slide-2-3">
-    <div class="col-lg-12 slide-first-row">
+    <div class="col-lg-12 slide-row-1">
         <img src="<?= Yii::getAlias('@web') . '/images/categories/2-3-1.png' ?>" />
         <?= strtoupper('MANGE <span>forskellige gener</span><br> medvirker til ms') ?>
     </div>
-    <div class="col-lg-12 slide-second-row">
+    <div class="col-lg-12 slide-row-2">
         <img src="<?= Yii::getAlias('@web') . '/images/categories/2-3-2.png' ?>" />
         <div class="col-lg-3">
             <?= strtoupper('vævstype') ?>

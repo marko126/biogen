@@ -1,9 +1,9 @@
 <div class="category-item slide-2-2">
-    <div class="col-lg-12 slide-first-row">
+    <div class="col-lg-12 slide-row-1">
         <img src="<?= Yii::getAlias('@web') . '/images/categories/2-2-1.png' ?>" />
         <?= strtoupper('person med ms') ?>
     </div>
-    <div class="col-lg-12 slide-second-row">
+    <div class="col-lg-12 slide-row-2">
         <div class="col-lg-4">
             <div class="slide-2-2-item">
                 <div class="slide-2-2-item-title">
@@ -41,10 +41,10 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-12 slide-third-row">
+    <div class="col-lg-12 slide-row-3">
         <img src="<?= Yii::getAlias('@web') . '/images/categories/2-2-12.png' ?>" />
     </div>
-    <div class="col-lg-12 slide-fourth-row">
+    <div class="col-lg-12 slide-row-4">
         <div class="col-lg-6">
             <div class="slide-2-2-item">
                 <div class="slide-2-2-item-title">

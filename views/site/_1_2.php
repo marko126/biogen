@@ -1,5 +1,5 @@
 <div class="category-item slide-1-2">
-    <div class="col-lg-12 slide-first-row">
+    <div class="col-lg-12 slide-row-1">
         <div class="col-lg-4">
             <div class="slide-1-2-title">
                 <?= strtoupper('rask Nervetråd') ?>
@@ -13,7 +13,7 @@
         </div>
     </div>
     <div class="col-lg-12">
-        <div class="slide-second-row toggle" id="damaged-myelin">
+        <div class="slide-row-2 toggle" id="damaged-myelin">
             <div class="col-lg-4">
                 <div class="slide-1-2-title">
                     <?= strtoupper('beskadiget myelin') ?>
@@ -27,7 +27,7 @@
                 <img src="<?= Yii::getAlias('@web') . '/images/categories/1-2-2.png' ?>" />
             </div>
         </div>
-        <div class="slide-third-row toggle" id="broken-nerve-wire">
+        <div class="slide-row-3 toggle" id="broken-nerve-wire">
             <div class="col-lg-4">
                 <div class="slide-1-2-title">
                     <?= strtoupper('Nedbrudt Nervetråd') ?>

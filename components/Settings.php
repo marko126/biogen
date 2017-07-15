@@ -10,7 +10,7 @@ class Settings extends Component {
     public function init() {        
         $this->categories = [
             1 => [
-                'title' => 'Hvad er<br> Multipel<br> Sclerose',
+                'title' => 'Hvad er<br>Multipel<br>Sclerose',
                 'subcategories' => [
                     1 => 'Multipel Sclerose Er en nervesygdom',
                     2 => 'Nedbrydning af myelin & nerveceller',
@@ -21,7 +21,7 @@ class Settings extends Component {
                 ]
             ],
             2 => [
-                'title' => 'årsager til<br> Multipel<br> Sclerose',
+                'title' => 'årsager til<br>Multipel<br>Sclerose',
                 'subcategories' => [
                     1 => 'årsagen til sclerose er ukendt',
                     2 => 'risiko hos<br> slægtninge',
@@ -30,7 +30,7 @@ class Settings extends Component {
                 ]
             ],
             3 => [
-                'title' => 'Hvordan<br> rammer<br> MS',
+                'title' => 'Hvordan<br>rammer<br>MS',
                 'subcategories' => [
                     1 => 'forekomst <br>af ms i danmark',
                     2 => 'hvem rammer <br>multipel sclerose',
@@ -50,6 +50,14 @@ class Settings extends Component {
                     6 => 'Undersøgelse <br>af rygmarvsvæske',
                     7 => 'Neurofysiologisk <br>undersøgelse',
                     8 => 'MS debut-<br>symptomer'
+                ]
+            ],
+            5 => [
+                'title' => 'Multipel<br>Sclerose<br>forløb',
+                'subcategories' => [
+                    1 => 'forløb af sclerose <br>uden behandling',
+                    2 => 'former for <br>MULTIPEL SCLEROSE',
+                    3 => 'fra attakvis til <br>sekundær progressiv'
                 ]
             ],
         ];
