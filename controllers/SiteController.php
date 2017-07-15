@@ -129,7 +129,7 @@ class SiteController extends Controller
      * @param type $id
      * @return type
      */
-    public function actionCategory($id)
+    public function actionCategory($id, $slide = 'first')
     {
         if ($id < 1 && $id > 6) {
             return $this->redirect('site/categories');
@@ -138,10 +138,13 @@ class SiteController extends Controller
         $this->layout = 'categories';
         
         $category = Yii::$app->settings->categories[$id];
+        //$categories = Yii::$app->settings->categories;
         
         return $this->render('category', [
             'id' => $id,
-            'category' => $category
+            'slide' => $slide,
+            'category' => $category,
+            //'categories' => $categories
         ]);
     }
 }

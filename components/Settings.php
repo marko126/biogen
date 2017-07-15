@@ -39,6 +39,19 @@ class Settings extends Component {
                     5 => 'miljøfaktorer & <br>immigrationsstudier'
                 ]
             ],
+            4 => [
+                'title' => ' Hvordan <br>stilles <br>diagnosen',
+                'subcategories' => [
+                    1 => 'diagnose/ <br>UDREDNING',
+                    2 => 'sygehistorie & <br><span>Neurologisk undersøgelse<span>',
+                    3 => 'MR <br>Scanning',
+                    4 => 'MR billeder <br>med plak',
+                    5 => 'kontrastopladning <br>i plak',
+                    6 => 'Undersøgelse <br>af rygmarvsvæske',
+                    7 => 'Neurofysiologisk <br>undersøgelse',
+                    8 => 'MS debut-<br>symptomer'
+                ]
+            ],
         ];
     }
 }

@@ -1,7 +1,7 @@
 $(document).on('ready', function() {
     $(".slider").slick({
 	dots: false,
-	infinite: true,
+	infinite: false,
 	arrows: false,
 	slidesToShow: 1,
 	slidesToScroll: 1,
@@ -55,4 +55,9 @@ function toggleNerves() {
     $('.toggle').fadeToggle();
     //$('#damaged-myelin').fadeToggle(200);
     //$('#broken-nerve-wire').fadeToggle(200);
+}
+
+function redirect(url) {
+    window.location = url;
+    return false;
 }

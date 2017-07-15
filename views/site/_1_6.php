@@ -9,6 +9,6 @@
     </div>
     <div class="col-lg-3 slide-part-right">
         <img src="<?= Yii::getAlias('@web') . '/images/categories/1-6-1.gif' ?>" />
-        <img src="<?= Yii::getAlias('@web') . '/images/categories/1-6-2.gif' ?>" id="popup-1-6-info" class="popup-info-icon" />
+        <img src="<?= Yii::getAlias('@web') . '/images/categories/help.gif' ?>" id="popup-1-6-help" class="popup-help-icon" />
     </div>
 </div>
