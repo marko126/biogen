@@ -60,6 +60,24 @@ class Settings extends Component {
                     3 => 'fra attakvis til <br>sekundær progressiv'
                 ]
             ],
+            5 => [
+                'title' => 'Behandling<br> af Multipel<br> Sclerose',
+                'subcategories' => [
+                    1 => 'rehabilitering',
+                    2 => 'Sygdomsdæmpende <br>behandling',
+                    3 => 'symptom <br>behandling',
+                    4 => 'Sclerose-<br>smerter',
+                    5 => 'Spasticitet <br>VED MS',
+                    6 => 'Fatigue eller <br>sclerosetræthed',
+                    7 => 'årsager til <br>sclerosetræthed',
+                    8 => 'behandling af <br>sclerosetræthed',
+                    9 => 'vandladnings-<br>gener',
+                    10 => 'tarm <br>dysfunktion',
+                    11 => 'faktorer der giver <br>forstoppelse',
+                    12 => 'faktorer der giver <br>Inkontinens',
+                    13 => 'SEKSUEL <br>DYSFUNKTION',
+                ]
+            ],
         ];
     }
 }
