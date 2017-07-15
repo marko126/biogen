@@ -14,4 +14,5 @@
     <div class="col-lg-4 slide-part-right">
         <img src="<?= Yii::getAlias('@web') . '/images/categories/4-2-2.png' ?>" />
     </div>
+    
 </div>

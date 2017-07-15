@@ -54,8 +54,12 @@ body {
     margin-left: 5px;
 }
 
-.footer .pull-left {
+.footer .pull-left, .footer .pull-left-back {
     margin: 5px 0 0 10px;
+}
+
+.footer .pull-left-back {
+    float: left !important;
 }
 
 .footer .left-arrow, .footer .right-arrow {
@@ -556,6 +560,15 @@ a.desc:after {
 .slide-4-8 img {
     width: 66%;
     margin: auto;
+}
+
+.back {
+    width: 60px;
+    position: absolute;
+    left: -10px;
+    bottom: 120px;
+    cursor: pointer;
+    display: none;
 }
 
 .popup-close {

@@ -1,4 +1,5 @@
 $(document).on('ready', function() {
+    
     $(".slider").slick({
 	dots: false,
 	infinite: false,
@@ -10,12 +11,24 @@ $(document).on('ready', function() {
         swipe: false,
     });
     
-    $('.left-arrow').click(function(){
-        $('.slider').slick("slickPrev");
+    $('.pull-left').on('click', function(){
+        if ($('#page-number').val() == '4' && $('#slide-number').val() == '7') {
+            console.log('gore pull left');
+            $('.slider').slick('slickGoTo', 0, true);
+        } else {
+            console.log('dole pull left');
+            $('.slider').slick("slickPrev");
+        }
     });
 
-    $('.right-arrow').click(function(){
-        $('.slider').slick("slickNext");
+    $('.pull-right').on('click', function(){
+        if ($('#page-number').val() == '4' && $('#slide-number').val() == '0') {
+            console.log('gore pull right');
+            $('.slider').slick('slickGoTo', 7, true);
+        } else {
+            console.log('dole pull right');
+            $('.slider').slick("slickNext");
+        }
     });
     
 });
@@ -60,4 +73,8 @@ function toggleNerves() {
 function redirect(url) {
     window.location = url;
     return false;
+}
+
+function goToSlide(currentSlide, slideToGo) {
+    
 }

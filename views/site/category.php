@@ -45,7 +45,21 @@ $this->title = $category['title'];
                         setPopupEvent('popup-4-6', 'popup-4-6-info', 'popup-4-6-close');
                     });
                     
-                    $('.pull-right').attr('onclick', \"console.log('radiiiiii');$('.slider').slick('slickGoTo',4, true);\")
+                    $('#left-top').on('click', function(){
+                        $('.slider').slick('slickGoTo',1, true);
+                    });
+                    
+                    $('#right-top').on('click', function(){
+                        $('.slider').slick('slickGoTo',2, true);
+                    });
+                    
+                    $('#left-bottom').on('click', function(){
+                        $('.slider').slick('slickGoTo',5, true);
+                    });
+                    
+                    $('#right-bottom').on('click', function(){
+                        $('.slider').slick('slickGoTo',6, true);
+                    });
             ";
         }
         $this->registerJs("
@@ -65,6 +79,7 @@ $this->title = $category['title'];
                         $('.pull-left').attr('onclick', \"redirect('".\yii\helpers\Url::to(['site/category', 'id' => $id-1, 'slide' => 'last'])."')\");
                     }
                     $('.slider').on('afterChange', function (event, slick, currentSlide) {
+                        $('#slide-number').val(currentSlide);
                         var categories = ".json_encode($category['subcategories']).";
                         var lastSlide = ".max(array_keys($category['subcategories']))."-1;
                         var key = currentSlide+1;
@@ -92,19 +107,33 @@ $this->title = $category['title'];
                             
                             $('.pull-left').removeAttr('onclick');
                         }
-                        if (4 == ".$id." && currentSlide == 0) {
-                            $('.pull-right').attr('onclick', \"console.log('radiiiiii');$('.slider').slick('slickGoTo','4', true);\")
-                        }
-                        if (4 == ".$id." && currentSlide == 6) {
-                            var img_src = $('.slide-4-7').children('.slide-part-right').find('img:first').attr('src');
-                            $('.slide-4-7').children('.slide-part-right').find('img:first').attr('src',img_src);
+                        if (4 == ".$id.") {
+                            if (currentSlide == 0) {
+                                $('.back').hide();
+                            }
+                            if (currentSlide == 6) {
+                                var img_src = $('.slide-4-7').children('.slide-part-right').find('img:first').attr('src');
+                                $('.slide-4-7').children('.slide-part-right').find('img:first').attr('src',img_src);
+                            }
+                            if (currentSlide == 7) {
+                                $('.back').hide();
+                            }
+                            if (currentSlide > 0 && currentSlide < 7) {
+                                $('.back').show();
+                                $('.back').attr('onclick', \"console.log('radiiiiii');$('.slider').slick('slickGoTo',0, true);\");
+                            }
                         }
                     });
-                    ".$script."
+                    ".$script."   
                 });
         ");
     ?>
     </div>
+    <input type="hidden" id="page-number" value="<?= $id ?>" />
+    <input type="hidden" id="slide-number" value="0"/>
+    <?php if($id == 4): ?>
+    <img src="<?= Yii::getAlias('@web') . '/images/categories/back.gif' ?>" class="back-to-4-1 back"/>
+    <?php endif; ?>
 </div>
 <?php 
 if ($id == 1) {
