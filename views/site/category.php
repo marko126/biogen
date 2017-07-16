@@ -62,6 +62,17 @@ $this->title = $category['title'];
                     });
             ";
         }
+         if ($id == 6) {
+            $script = "
+                    $('#popup-6-4-help').on('click', function(){
+                        setPopupEvent('popup-6-4', 'popup-6-4-help', 'popup-6-4-close');
+                    });
+                    
+                    $('#popup-6-5-help').on('click', function(){
+                        setPopupEvent('popup-6-5', 'popup-6-5-help', 'popup-6-5-close');
+                    });
+            ";
+        }
         $this->registerJs("
                 $(document).on('ready', function() {
                     var slideToGo = '".$slide."';  
@@ -85,15 +96,15 @@ $this->title = $category['title'];
                         var key = currentSlide+1;
                         $('.category-subtitle').html(categories[key].toUpperCase());
                         if (1 == ".$id." && currentSlide == 0) {
-                            var img_src = $('.slide-1-1').children('.slide-part-right').children('img').attr('src');
-                            $('.slide-1-1').children('.slide-part-right').children('img').attr('src',img_src);
+                            var img_src = $('#gif-1-1').attr('src');
+                            $('#gif-1-1').attr('src',img_src);
                             $('.pull-left').attr('style', 'display: none');
                         } else {
                             $('.pull-left').removeAttr('style');
                         }
                         if (1 == ".$id." && currentSlide == 5) {
-                            var img_src = $('.slide-1-6').children('.slide-part-right').find('img:first').attr('src');
-                            $('.slide-1-6').children('.slide-part-right').find('img:first').attr('src',img_src);
+                            var img_src = $('#gif-1-6').attr('src');
+                            $('#gif-1-6').attr('src',img_src);
                         }
                         if (currentSlide == lastSlide) {
                             $('.pull-right').attr('onclick', \"redirect('".\yii\helpers\Url::to(['site/category', 'id' => $id+1])."')\");
@@ -112,15 +123,31 @@ $this->title = $category['title'];
                                 $('.back').hide();
                             }
                             if (currentSlide == 6) {
-                                var img_src = $('.slide-4-7').children('.slide-part-right').find('img:first').attr('src');
-                                $('.slide-4-7').children('.slide-part-right').find('img:first').attr('src',img_src);
+                                var img_src = $('#gif-4-7').attr('src');
+                                $('#gif-4-7').attr('src',img_src);
                             }
                             if (currentSlide == 7) {
                                 $('.back').hide();
                             }
                             if (currentSlide > 0 && currentSlide < 7) {
                                 $('.back').show();
-                                $('.back').attr('onclick', \"console.log('radiiiiii');$('.slider').slick('slickGoTo',0, true);\");
+                                $('.back').attr('onclick', \"$('.slider').slick('slickGoTo',0, true);\");
+                            }
+                        }
+                        if (6 == ".$id.") {
+                            if (currentSlide == 3) {
+                                var img_src = $('#gif-6-4').attr('src');
+                                $('#gif-6-4').attr('src',img_src);
+                            }
+                            
+                            if (currentSlide == 5) {
+                                var img_src = $('#gif-6-6').attr('src');
+                                $('#gif-6-6').attr('src',img_src);
+                            }
+                            
+                            if (currentSlide == 7) {
+                                var img_src = $('#gif-6-8').attr('src');
+                                $('#gif-6-8').attr('src',img_src);
                             }
                         }
                     });
@@ -141,6 +168,10 @@ if ($id == 1) {
 }
 if ($id == 4) {
     echo $this->render('_4_6_popup'); 
+}
+if ($id == 6) {
+    echo $this->render('_6_4_popup'); 
+    echo $this->render('_6_5_popup'); 
 }
 
 ?>

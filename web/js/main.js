@@ -13,20 +13,16 @@ $(document).on('ready', function() {
     
     $('.pull-left').on('click', function(){
         if ($('#page-number').val() == '4' && $('#slide-number').val() == '7') {
-            console.log('gore pull left');
             $('.slider').slick('slickGoTo', 0, true);
         } else {
-            console.log('dole pull left');
             $('.slider').slick("slickPrev");
         }
     });
 
     $('.pull-right').on('click', function(){
         if ($('#page-number').val() == '4' && $('#slide-number').val() == '0') {
-            console.log('gore pull right');
             $('.slider').slick('slickGoTo', 7, true);
         } else {
-            console.log('dole pull right');
             $('.slider').slick("slickNext");
         }
     });

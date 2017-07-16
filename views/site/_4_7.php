@@ -10,7 +10,7 @@
         </ul>
     </div>
     <div class="col-lg-6 slide-part-right">
-        <img src="<?= Yii::getAlias('@web') . '/images/categories/4-7-2.gif' ?>" />
+        <img src="<?= Yii::getAlias('@web') . '/images/categories/4-7-2.gif' ?>" id="gif-4-7" />
         <img src="<?= Yii::getAlias('@web') . '/images/categories/info.gif' ?>" class="popup-info-icon" id="popup-4-7-info" />
     </div>
 </div>
