@@ -82,6 +82,13 @@ class Settings extends Component {
                     17 => 'SEKSUEL <br>DYSFUNKTION'
                 ]
             ],
+            7 => [
+                'title' => 'symptomer<br>PÅ Multipel<br>Sclerose',
+                'subcategories' => [
+                    1 => 'symptomer ved <br>MS',
+                    2 => 'symptomforværring - <br>Pseudo attak'
+                ]
+            ],
         ];
     }
 }
