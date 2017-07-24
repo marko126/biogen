@@ -71,12 +71,15 @@ class Settings extends Component {
                     6 => 'Fatigue eller <br>sclerosetræthed',
                     7 => 'Fatigue eller <br>sclerosetræthed',
                     8 => 'årsager til <br>sclerosetræthed',
-                    /*9 => 'behandling af <br>sclerosetræthed',
-                    10 => 'vandladnings-<br>gener',
-                    11 => 'tarm <br>dysfunktion',
-                    12 => 'faktorer der giver <br>forstoppelse',
-                    13 => 'faktorer der giver <br>Inkontinens',
-                    14 => 'SEKSUEL <br>DYSFUNKTION',*/
+                    9 => 'årsager til <br>sclerosetræthed',
+                    10 => 'behandling af <br>sclerosetræthed',
+                    11 => 'vandladnings-<br>gener',
+                    12 => 'vandladnings-<br>gener',
+                    13 => 'tarm <br>dysfunktion',
+                    14 => 'faktorer der giver <br>forstoppelse',
+                    15 => 'faktorer der giver <br>Inkontinens',
+                    16 => 'SEKSUEL <br>DYSFUNKTION',
+                    17 => 'SEKSUEL <br>DYSFUNKTION'
                 ]
             ],
         ];

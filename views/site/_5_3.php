@@ -1,6 +1,8 @@
 <div class="category-item slide-5-3">
     <div class="col-lg-12 slide-row-1">
-        <?= strtoupper('uden behandling') ?>
+        <div class="slide-title">
+            <?= strtoupper('uden behandling') ?>
+        </div>
     </div>
     <div class="col-lg-12 slide-row-2">
         ca. 50% går fra det attakvise forløb til sekundær progressiv fase

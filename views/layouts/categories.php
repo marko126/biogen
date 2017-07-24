@@ -23,8 +23,10 @@ AppAsset::register($this);
     <link rel="stylesheet" type="text/css" href="<?= Yii::getAlias('@web') . '/slick/slick-theme.css' ?>"/>
     <link rel="stylesheet" type="text/css" href="<?= Yii::getAlias('@web') . '/css/popup.css' ?>"/>
     
+    <script src="<?= Yii::getAlias('@web') . '/js/jquery-2.2.4.min.js' ?>" type="text/javascript"></script>
+    <!--
     <script src="//code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
-    
+    -->
     <script type="text/javascript" src="<?= Yii::getAlias('@web') . '/js/main.js' ?>" ></script>
     <?php $this->head() ?>
 </head>
@@ -45,7 +47,10 @@ AppAsset::register($this);
         <p class="pull-right right-arrow"><img src="<?= Yii::getAlias('@web') . '/images/right-arrow.png' ?>" style="height: 30px" /></p>
     
 </footer>
+<script type="text/javascript" src="<?= Yii::getAlias('@web') . '/slick/slick.min.js'?>"></script>    
+<!--
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+-->
 <?php
 if (class_exists('yii\debug\Module')) {
     $this->off(\yii\web\View::EVENT_END_BODY, [\yii\debug\Module::getInstance(), 'renderToolbar']);

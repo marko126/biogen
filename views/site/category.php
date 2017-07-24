@@ -71,11 +71,79 @@ $this->title = $category['title'];
                     $('#popup-6-5-help').on('click', function(){
                         setPopupEvent('popup-6-5', 'popup-6-5-help', 'popup-6-5-close');
                     });
+                    
+                    $('#slide-6-8-browse').on('click', function(){
+                        $('.slider').slick('slickGoTo',8, true);
+                    });
+                    
+                    $('#slide-6-9-back').on('click', function(){
+                        $('.slider').slick('slickGoTo',7, true);
+                    });
+                    
+                    $('#popup-6-10-help').on('click', function(){
+                        setPopupEvent('popup-6-10', 'popup-6-10-help', 'popup-6-10-close');
+                    });
+                    
+                    $('#popup-6-11-help').on('click', function(){
+                        setPopupEvent('popup-6-11', 'popup-6-11-help', 'popup-6-11-close');
+                    });
+                    
+                    $('#slide-6-11-browse').on('click', function(){
+                        $('.slider').slick('slickGoTo',11, true);
+                    });
+                    
+                    $('#slide-6-12-back').on('click', function(){
+                        $('.slider').slick('slickGoTo',10, true);
+                    });
+                    
+                    $('#popup-6-12-help').on('click', function(){
+                        setPopupEvent('popup-6-12', 'popup-6-12-help', 'popup-6-12-close');
+                    });
+                    
+                    $('#popup-6-14-help').on('click', function(){
+                        setPopupEvent('popup-6-14', 'popup-6-14-help', 'popup-6-14-close');
+                    });
+                    
+                    $('#popup-6-15-help').on('click', function(){
+                        setPopupEvent('popup-6-15', 'popup-6-15-help', 'popup-6-15-close');
+                    });
+                    
+                    $('#slide-6-16-browse').on('click', function(){
+                        $('.slider').slick('slickGoTo',16, true);
+                    });
+                    
+                    $('#slide-6-17-back').on('click', function(){
+                        $('.slider').slick('slickGoTo',15, true);
+                    });
+                    
+                    $('#6-3-1-menu').on('click', function(){
+                        $('.slider').slick('slickGoTo',3, true);
+                    });
+                    
+                    $('#6-3-2-menu').on('click', function(){
+                        $('.slider').slick('slickGoTo',4, true);
+                    });
+                    
+                    $('#6-3-3-menu').on('click', function(){
+                        $('.slider').slick('slickGoTo',5, true);
+                    });
+                    
+                    $('#6-3-4-menu').on('click', function(){
+                        $('.slider').slick('slickGoTo',10, true);
+                    });
+                    
+                    $('#6-3-5-menu').on('click', function(){
+                        $('.slider').slick('slickGoTo',12, true);
+                    });
+                    
+                    $('#6-3-6-menu').on('click', function(){
+                        $('.slider').slick('slickGoTo',15, true);
+                    });
             ";
         }
         $this->registerJs("
                 $(document).on('ready', function() {
-                    var slideToGo = '".$slide."';  
+                    var slideToGo = '".$slide."';
                     var categories = ".json_encode($category['subcategories']).";
                     $('.category-subtitle').html(categories[1].toUpperCase());
                     if (slideToGo == 'last') {
@@ -106,7 +174,7 @@ $this->title = $category['title'];
                             var img_src = $('#gif-1-6').attr('src');
                             $('#gif-1-6').attr('src',img_src);
                         }
-                        if (currentSlide == lastSlide) {
+                        if (currentSlide == lastSlide || (6 == ".$id." && currentSlide == lastSlide - 1)) {
                             $('.pull-right').attr('onclick', \"redirect('".\yii\helpers\Url::to(['site/category', 'id' => $id+1])."')\");
                         } else {
                             $('.pull-right').removeAttr('onclick');
@@ -135,6 +203,17 @@ $this->title = $category['title'];
                             }
                         }
                         if (6 == ".$id.") {
+                            if (currentSlide < 3) {
+                                $('.back').hide();
+                            } else {
+                                $('.back').show();
+                                $('.back').attr('onclick', \"$('.slider').slick('slickGoTo',2, true);\");
+                            }
+                            
+                            if (currentSlide == 2) {
+                                
+                            }
+                            
                             if (currentSlide == 3) {
                                 var img_src = $('#gif-6-4').attr('src');
                                 $('#gif-6-4').attr('src',img_src);
@@ -158,8 +237,8 @@ $this->title = $category['title'];
     </div>
     <input type="hidden" id="page-number" value="<?= $id ?>" />
     <input type="hidden" id="slide-number" value="0"/>
-    <?php if($id == 4): ?>
-    <img src="<?= Yii::getAlias('@web') . '/images/categories/back.gif' ?>" class="back-to-4-1 back"/>
+    <?php if($id == 4 || $id == 6): ?>
+    <img src="<?= Yii::getAlias('@web') . '/images/categories/back.gif' ?>" class="back"/>
     <?php endif; ?>
 </div>
 <?php 
@@ -172,6 +251,11 @@ if ($id == 4) {
 if ($id == 6) {
     echo $this->render('_6_4_popup'); 
     echo $this->render('_6_5_popup'); 
+    echo $this->render('_6_10_popup'); 
+    echo $this->render('_6_11_popup');
+    echo $this->render('_6_12_popup');
+    echo $this->render('_6_14_popup');
+    echo $this->render('_6_15_popup');
 }
 
 ?>

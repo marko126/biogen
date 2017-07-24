@@ -1,7 +1,9 @@
 <div class="category-item slide-6-5">
-    <div class="slide-6-5-container">
+    <div class="slide-container">
         <div class="col-lg-12 slide-row-1">
-            <?= strtoupper('Øget muskelspænding<br>& Stive muskler') ?>
+            <div class="slide-title">
+                <?= strtoupper('Øget muskelspænding<br>& Stive muskler') ?>
+            </div>
         </div>
         <div class="col-lg-12 slide-row-2">
             <div class="col-lg-7">

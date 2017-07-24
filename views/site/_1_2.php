@@ -1,7 +1,7 @@
 <div class="category-item slide-1-2">
     <div class="col-lg-12 slide-row-1">
         <div class="col-lg-4">
-            <div class="slide-1-2-title">
+            <div class="slide-title">
                 <?= strtoupper('rask Nervetråd') ?>
             </div>
             <div class="slide-1-2-body">
@@ -15,7 +15,7 @@
     <div class="col-lg-12">
         <div class="slide-row-2 toggle" id="damaged-myelin">
             <div class="col-lg-4">
-                <div class="slide-1-2-title">
+                <div class="slide-title">
                     <?= strtoupper('beskadiget myelin') ?>
                 </div>
                 <div class="slide-1-2-body">

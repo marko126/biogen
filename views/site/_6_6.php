@@ -1,6 +1,8 @@
 <div class="category-item slide-6-6">
     <div class="col-lg-12 slide-row-1">
-        <?= strtoupper('mental og Fysisk udmattelse') ?>
+        <div class="slide-title">
+            <?= strtoupper('mental og Fysisk udmattelse') ?>
+        </div>
     </div>
     <div class="col-lg-12 slide-row-2">
         <div class="col-lg-6 slide-part-left">
