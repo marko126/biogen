@@ -4,6 +4,7 @@ namespace app\models;
 
 use Yii;
 use yii\base\Model;
+use app\models\MsdActivationCode;
 
 /**
  * LoginForm is the model behind the login form.
@@ -13,7 +14,6 @@ use yii\base\Model;
  */
 class LoginForm extends Model
 {
-    public $username;
     public $password;
     public $rememberMe = true;
 
@@ -26,12 +26,20 @@ class LoginForm extends Model
     public function rules()
     {
         return [
-            // username and password are both required
-            [['username', 'password'], 'required'],
-            // rememberMe must be a boolean value
-            ['rememberMe', 'boolean'],
+            // password is required
+            [['password'], 'required'],
             // password is validated by validatePassword()
             ['password', 'validatePassword'],
+        ];
+    }
+    
+    /**
+     * @inheritdoc
+     */
+    public function attributeLabels()
+    {
+        return [
+            'password' => 'Denne app er kun beregnet til sundhedspersonale i Danmark',
         ];
     }
 
@@ -47,7 +55,7 @@ class LoginForm extends Model
         if (!$this->hasErrors()) {
             $user = $this->getUser();
 
-            if (!$user || !$user->validatePassword($this->password)) {
+            if (!$user) {
                 $this->addError($attribute, 'Incorrect username or password.');
             }
         }
@@ -73,7 +81,7 @@ class LoginForm extends Model
     public function getUser()
     {
         if ($this->_user === false) {
-            $this->_user = User::findByUsername($this->username);
+            $this->_user = MsdActivationCode::findByActivationCode($this->password);
         }
 
         return $this->_user;
