@@ -56,7 +56,7 @@ class LoginForm extends Model
             $user = $this->getUser();
 
             if (!$user) {
-                $this->addError($attribute, 'Incorrect username or password.');
+                $this->addError($attribute, 'Koden er desværre forkert. Prøv igen.');
             }
         }
     }

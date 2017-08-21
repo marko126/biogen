@@ -12,7 +12,7 @@ use yii\filters\VerbFilter;
 /**
  * MsdActivationCodeController implements the CRUD actions for MsdActivationCode model.
  */
-class MsdActivationCodeController extends Controller
+class MsdactivationcodeController extends Controller
 {
     /**
      * @inheritdoc
@@ -23,7 +23,7 @@ class MsdActivationCodeController extends Controller
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'delete' => ['POST'],
+                    //'delete' => ['POST'],
                 ],
             ],
         ];
@@ -35,30 +35,22 @@ class MsdActivationCodeController extends Controller
      * @param integer $id
      * @return mixed
      */
-    public function actionUpdate($id)
+    public function actionUpdate()
     {
+        $id = Yii::$app->user->identity->getId();
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->actcodeid]);
+        if ($model->load(Yii::$app->request->post())) {
+            if ($model->save()) {
+                return $this->redirect(['site/categories']);
+            } else {
+                var_dump($model->getErrors());exit();
+            }
         } else {
             return $this->render('update', [
                 'model' => $model,
             ]);
         }
-    }
-
-    /**
-     * Deletes an existing MsdActivationCode model.
-     * If deletion is successful, the browser will be redirected to the 'index' page.
-     * @param integer $id
-     * @return mixed
-     */
-    public function actionDelete($id)
-    {
-        $this->findModel($id)->delete();
-
-        return $this->redirect(['index']);
     }
 
     /**

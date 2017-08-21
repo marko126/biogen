@@ -13,9 +13,15 @@ $this->title = 'DANSK MULTIPEL SCLEROSE Center';
             <?= Html::encode(strtoupper($this->title)) ?>
         </div>
         <div class="category-title col-lg-4">
-            <?= strtoupper('Morten Blinkenberg') ?>
+            <div>
+                <?= strtoupper($user->getFirstName()) ?>
+            </div>
+            <div>
+                <?= strtoupper($user->getLastName()) ?>
+            </div>
+            
             <span>
-                <?= strtoupper('rigshospitalet') ?>
+                <?= strtoupper($user->getHospitalName()) ?>
             </span>
         </div>
     </div>

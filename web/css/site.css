@@ -76,6 +76,102 @@ body {
     padding: 14px 24px;
 }
 
+.site-login {
+    width: 30%;
+    margin: auto;
+    font-family: Nexa Light;
+    font-size: 18px;
+    color: #3a3734;
+}
+
+.site-login-ms {
+    width: 100%;
+    font-family: Nexa Bold;
+    font-size: 203px;
+    color: #375963;
+}
+
+.site-login-dialog {
+    width: 100%;
+    font-family: Nexa Light;
+    font-size: 50px;
+    color: #375963;
+}
+
+.site-login-ms-dialog {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.form-control {
+    font-size: 18px;
+    height: 43px;
+}
+
+.login-button {
+    width: 100%;
+    background-color: #8cc540;
+    border-color: #8cc540;
+    font-size: 18px;
+}
+
+.has-error .help-block {
+    color: #e14b12;
+    font-family: Nexa Bold;
+    font-size: 18px;
+}
+
+.login-key {
+    width: 56px;
+    position: absolute;
+    left: 25px;
+    top: 4px;
+}
+
+.title-update-data {
+    font-size: 72px;
+    font-family: Helvetica Neue LT Std;
+    color: #bcd0cb;
+    text-align: center;
+}
+
+#update-form {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#update-form .form-group {
+    height: 80px;
+}
+
+#update-form label {
+    font-family: Mari Bold;
+    font-size: 20px;
+}
+
+#update-form input {
+    color: #bcd0cb;
+}
+
+.update-button {
+    width: 175px;
+    height: 45px;
+    background-color: #8cc540;
+    border-color: #8cc540;
+    font-size: 18px;
+    float: right;
+}
+
+.update-footer {
+    float: right;
+    margin-top: 40px;
+    font-family: Nexa Light;
+    font-size: 16px;
+    color: #878786;
+}
+
 .not-set {
     color: #c55;
     font-style: italic;

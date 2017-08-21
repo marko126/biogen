@@ -24,6 +24,8 @@ use yii\web\IdentityInterface;
 class MsdActivationCode extends \yii\db\ActiveRecord implements IdentityInterface
 {
     public $auth_key;
+    public $first_name;
+    public $last_name;
     /**
      * @inheritdoc
      */
@@ -38,7 +40,7 @@ class MsdActivationCode extends \yii\db\ActiveRecord implements IdentityInterfac
     public function rules()
     {
         return [
-            [['section_name', 'doctor_name', 'hospital_name', 'activation_code', 'createdate', 'tokenid', 'tokendate', 'deviceid', 'devicetype'], 'required'],
+            [['section_name', 'hospital_name', 'activation_code', 'first_name', 'last_name'], 'required'],
             [['status', 'devicetype', 'first_login'], 'integer'],
             [['createdate', 'tokendate'], 'safe'],
             [['section_name', 'doctor_name', 'hospital_name', 'activation_code', 'deviceid'], 'string', 'max' => 255],
@@ -54,9 +56,11 @@ class MsdActivationCode extends \yii\db\ActiveRecord implements IdentityInterfac
     {
         return [
             'actcodeid' => 'Actcodeid',
-            'section_name' => 'Section Name',
-            'doctor_name' => 'Doctor Name',
-            'hospital_name' => 'Hospital Name',
+            'section_name' => 'AFDELING',
+            'doctor_name' => 'LÆGE',
+            'first_name' => 'Fornavn',
+            'last_name' => 'Efternavn',
+            'hospital_name' => 'HOSPITAL',
             'activation_code' => 'Activation Code',
             'status' => '1=enable, 0=disable',
             'createdate' => 'Createdate',
@@ -100,7 +104,55 @@ class MsdActivationCode extends \yii\db\ActiveRecord implements IdentityInterfac
      */
     public static function findByActivationCode($activation_code)
     {
-	return static::findOne(['activation_code' => $username]);
+	return static::findOne(['activation_code' => $activation_code]);
+    }
+    
+    /**
+     * 
+     * @return type
+     */
+    public function getFirstName() {
+        return $this->first_name;
+    }
+    
+    /**
+     * 
+     * @return type
+     */
+    public function getLastName() {
+        return $this->last_name;
+    }
+    
+    /**
+     * 
+     * @return type
+     */
+    public function getHospitalName() {
+        return $this->hospital_name;
+    }
+    
+    public function afterFind() {
+        if (isset($this->actcodeid)) {
+            $name = explode(' ', $this->doctor_name);
+            $this->first_name = $name[0];
+            if (sizeof($name) > 2) {
+                unset($name[0]);
+                $name = implode(' ', $name);
+                $this->last_name = $name;
+            } elseif (sizeof($name) == 2) {
+                $this->last_name = $name[1];
+            }
+        }
+    }
+    
+    public function beforeSave($update) {
+        if(parent::beforeSave($update)) {
+            $this->doctor_name = $this->first_name.' '.$this->last_name;
+            return true;
+        } else {
+            return false;
+        }
+        
     }
 
 }
