@@ -89,6 +89,13 @@ class Settings extends Component {
                     2 => 'symptomforværring - <br>Pseudo attak'
                 ]
             ],
+            8 => [
+                'title' => 'HVAD KAN<br>JEG SELV<br>GØRE',
+                'subcategories' => [
+                    1 => 'VÆLG DEN MOTION DER <br>PASSER BEDST TIL DIG',
+                    2 => 'FØLG DE 10 <br>KOSTRÅD'
+                ]
+            ],
         ];
     }
 }
