@@ -1281,6 +1281,35 @@ a.desc:after {
     margin-top: 20px;
 }
 
+.slide-9-1 {
+    
+}
+
+.slide-9-1 .slide-row-1 {
+    margin-top: 50px;
+    padding-left: 100px;
+}
+
+.slide-9-1-item {
+    font-size: 24px;
+    width: 100%;
+    float: left;
+    margin-bottom: 40px;
+}
+
+.slide-9-1-item img {
+    width: 100px;
+    float: left;
+}
+
+.slide-9-1-item ul {
+    float: left;
+}
+
+.slide-9-1-item ul li {
+    font-size: 24px;
+}
+
 .back {
     width: 60px;
     position: absolute;

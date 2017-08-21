@@ -96,6 +96,12 @@ class Settings extends Component {
                     2 => 'FØLG DE 10 <br>KOSTRÅD'
                 ]
             ],
+            9 => [
+                'title' => 'GRAVID MED<br>MULTIPEL<br>SCLEROSE',
+                'subcategories' => [
+                    1 => 'NÅR DU PLANLÆGGER <br>GRAVIDITET'
+                ]
+            ],
         ];
     }
 }

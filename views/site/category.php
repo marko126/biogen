@@ -157,6 +157,11 @@ $this->title = $category['title'];
                         }
                         $('.pull-left').attr('onclick', \"redirect('".\yii\helpers\Url::to(['site/category', 'id' => $id-1, 'slide' => 'last'])."')\");
                     }
+                    if (9 == ".$id.") {
+                        $('.pull-right').attr('style', 'display: none');
+                    } else {
+                        $('.pull-right').removeAttr('style');
+                    }
                     $('.slider').on('afterChange', function (event, slick, currentSlide) {
                         $('#slide-number').val(currentSlide);
                         var categories = ".json_encode($category['subcategories']).";
