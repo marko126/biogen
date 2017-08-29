@@ -62,7 +62,17 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        if (!Yii::$app->user->isGuest) {
+            return $this->redirect(['msdactivationcode/update']);
+        }
+
+        $model = new LoginForm();
+        if ($model->load(Yii::$app->request->post()) && $model->login()) {
+            return $this->redirect(['msdactivationcode/update']);
+        }
+        return $this->render('login', [
+            'model' => $model,
+        ]);
     }
 
     /**

@@ -146,6 +146,12 @@ $this->title = $category['title'];
                     var slideToGo = '".$slide."';
                     var categories = ".json_encode($category['subcategories']).";
                     $('.category-subtitle').html(categories[1].toUpperCase());
+                    $('.menu-text').click(function(){
+                        //$('#menu').slideToggle(1000);
+                        $('#menu').animate({
+                            width: 'toggle'
+                        });
+                    });
                     if (slideToGo == 'last') {
                         $('.slider').slick('slickGoTo', ".max(array_keys($category['subcategories']))."-1, true);
                         $('.pull-right').attr('onclick', \"redirect('".\yii\helpers\Url::to(['site/category', 'id' => $id+1])."')\");
@@ -245,6 +251,9 @@ $this->title = $category['title'];
     <?php if($id == 4 || $id == 6): ?>
     <img src="<?= Yii::getAlias('@web') . '/images/categories/back.gif' ?>" class="back"/>
     <?php endif; ?>
+    
+    <?= $this->render('menu') ?>
+    
 </div>
 <?php 
 if ($id == 1) {
