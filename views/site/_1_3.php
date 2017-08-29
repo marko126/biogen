@@ -7,7 +7,7 @@
         To nøgler passer til samme lås 
     </div>
     <div class="col-lg-10">
-        <img src="<?= Yii::getAlias('@web') . '/images/categories/1-3-1.gif' ?>" />
+        <img src="<?= Yii::getAlias('@web') . '/images/categories/1-3-1.gif' ?>" id="gif-1-3" />
     </div>
     <div class="col-lg-2">
         <img src="<?= Yii::getAlias('@web') . '/images/categories/1-3-2.png' ?>" />

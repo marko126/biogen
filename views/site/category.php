@@ -174,10 +174,16 @@ $this->title = $category['title'];
                         var lastSlide = ".max(array_keys($category['subcategories']))."-1;
                         var key = currentSlide+1;
                         $('.category-subtitle').html(categories[key].toUpperCase());
-                        if (1 == ".$id." && currentSlide == 0) {
-                            var img_src = $('#gif-1-1').attr('src');
-                            $('#gif-1-1').attr('src',img_src);
-                            $('.pull-left').attr('style', 'display: none');
+                        if (1 == ".$id." ) {
+                            if (currentSlide == 0) {
+                                var img_src = $('#gif-1-1').attr('src');
+                                $('#gif-1-1').attr('src',img_src);
+                                $('.pull-left').attr('style', 'display: none');
+                            }
+                            if (currentSlide == 2) {
+                                var img_src = $('#gif-1-3').attr('src');
+                                $('#gif-1-3').attr('src',img_src);
+                            }
                         } else {
                             $('.pull-left').removeAttr('style');
                         }
