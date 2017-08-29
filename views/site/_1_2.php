@@ -5,7 +5,8 @@
                 <?= strtoupper('rask Nervetråd') ?>
             </div>
             <div class="slide-1-2-body">
-                Tryk på nervetråden for at se nedbrydningens to faser
+                Tryk på nervetråden for at se nedbrydningens to faser. <br>
+                Tryk 2 gange!
             </div>
         </div>
         <div class="col-lg-8">
