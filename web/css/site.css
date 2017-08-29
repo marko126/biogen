@@ -155,6 +155,21 @@ body {
     color: #bcd0cb;
 }
 
+#update-form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #bcd0cb;
+}
+
+#update-form input::-moz-placeholder { /* Firefox 19+ */
+  color: #bcd0cb;
+}
+
+#update-form input:-ms-input-placeholder { /* IE 10+ */
+  color: #bcd0cb;
+}
+#update-form input:-moz-placeholder { /* Firefox 18- */
+  color: #bcd0cb;
+}
+
 .update-button {
     width: 175px;
     height: 45px;

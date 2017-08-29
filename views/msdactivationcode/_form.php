@@ -18,7 +18,7 @@ use yii\widgets\ActiveForm;
     <div>
         <?= Html::activeLabel($model, 'hospital_name', ['class' => 'col-lg-3']); ?>
         <div class="col-lg-9">
-            <?= $form->field($model, 'hospital_name')->textInput(['maxlength' => true])->label(false) ?>
+            <?= $form->field($model, 'hospital_name')->textInput(['maxlength' => true, 'placeholder' => $model->hospital_name, 'value' => ''])->label(false) ?>
             <?= Html::error($model, 'hospital_name') ?>
         </div>
     </div>
@@ -26,7 +26,7 @@ use yii\widgets\ActiveForm;
     <div>
         <?= Html::activeLabel($model, 'section_name', ['class' => 'col-lg-3']); ?>
         <div class="col-lg-9">
-            <?= $form->field($model, 'section_name')->textInput(['maxlength' => true])->label(false) ?>
+            <?= $form->field($model, 'section_name')->textInput(['maxlength' => true, 'placeholder' => $model->section_name, 'value' => ''])->label(false) ?>
             <?= Html::error($model, 'section_name') ?>
         </div>
     </div>
@@ -34,11 +34,11 @@ use yii\widgets\ActiveForm;
     <div>
         <?= Html::activeLabel($model, 'doctor_name', ['class' => 'col-lg-3']); ?>
         <div class="col-lg-4">
-            <?= $form->field($model, 'first_name')->textInput(['maxlength' => true])->label(false) ?>
+            <?= $form->field($model, 'first_name')->textInput(['maxlength' => true, 'placeholder' => $model->first_name, 'value' => ''])->label(false) ?>
             <?= Html::error($model, 'first_name') ?>
         </div>
         <div class="col-lg-5">
-            <?= $form->field($model, 'last_name')->textInput(['maxlength' => true])->label(false) ?>
+            <?= $form->field($model, 'last_name')->textInput(['maxlength' => true, 'placeholder' => $model->last_name, 'value' => ''])->label(false) ?>
             <?= Html::error($model, 'last_name') ?>
         </div>
     </div>
