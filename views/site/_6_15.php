@@ -3,7 +3,7 @@
         <div class="slide-row-1">
             <img src="<?= Yii::getAlias('@web') . '/images/categories/6-15.png' ?>" />
         </div>
-        <div class="slide-row-2">
+        <div class="slide-row-2 col-lg-12">
             <div class="col-lg-7 slide-part-left">
                 <ul>
                     <li>Ukontrolleret afføringsrefleks</li>
@@ -19,6 +19,7 @@
             </div>
         </div>
         <img src="<?= Yii::getAlias('@web') . '/images/categories/help.gif' ?>" id="popup-6-15-help" class="popup-help-icon" />
+        <?= $this->render('_6_15_popup') ?>
     </div>
 </div>
     

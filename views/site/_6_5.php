@@ -19,6 +19,7 @@
         </div>
         <img src="<?= Yii::getAlias('@web') . '/images/categories/help.gif' ?>" id="popup-6-5-help" class="popup-help-icon" />
         <img src="<?= Yii::getAlias('@web') . '/images/categories/6-5-2.png' ?>" id="slide-6-5-img-2"/>
+        <?= $this->render('_6_5_popup') ?>
     </div>
 </div>
     

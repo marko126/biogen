@@ -34,6 +34,7 @@
         </div>
 
         <img src="<?= Yii::getAlias('@web') . '/images/categories/help.gif' ?>" id="popup-6-10-help" class="popup-help-icon" />
+        <?= $this->render('_6_10_popup') ?>
     </div>
 </div>
     
