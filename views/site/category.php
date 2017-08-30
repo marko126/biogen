@@ -45,6 +45,10 @@ $this->title = $category['title'];
                         setPopupEvent('popup-4-6', 'popup-4-6-info', 'popup-4-6-close');
                     });
                     
+                    $('#popup-4-7-info').on('click', function(){
+                        setPopupEvent('popup-4-7', 'popup-4-7-info', 'popup-4-7-close');
+                    });
+                    
                     $('#left-top').on('click', function(){
                         $('.slider').slick('slickGoTo',1, true);
                     });

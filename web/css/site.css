@@ -357,6 +357,7 @@ a.desc:after {
     position: relative; 
     top: 0; 
     left: 0;
+    float: left;
 }
 
 .slide-1-1 .slide-part-right img {
@@ -665,11 +666,11 @@ a.desc:after {
     font-family: Nexa Bold;
 }
 
-#popup-4-6 .modal-content, #popup-4-7 .modal-content {
+#popup-4-6 .modal-content {
     width: 70%;
 }
 
-#popup-4-6 .modal-content .popup-info-title {
+#popup-4-6 .modal-content .popup-info-title, #popup-4-7 .modal-content .popup-info-title {
     text-align: center;
     font-size: 26px;
 }
@@ -697,6 +698,19 @@ a.desc:after {
 
 #popup-4-7-info {
     top: 0px;
+}
+
+#popup-4-7 .modal-body {
+    padding-top: 50px;
+}
+
+#popup-4-7 .modal-body img {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+#popup-4-7 .modal-content {
+    width: 65%;
 }
 
 .slide-4-8 img {
@@ -1012,10 +1026,6 @@ a.desc:after {
 .slide-6-10 {
     font-size: 24px;
     color: #3a3734;
-}
-
-.slide-4-6 .slide-container, .slide-6-4 .slide-container, .slide-6-5 .slide-container, .slide-6-10 .slide-container, .slide-6-11 .slide-container, .slide-6-12 .slide-container {
-    float: left;
 }
 
 .slide-6-10-item {
