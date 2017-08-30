@@ -669,13 +669,24 @@ a.desc:after {
     width: 70%;
 }
 
+#popup-4-6 .modal-content .popup-info-title {
+    text-align: center;
+    font-size: 26px;
+}
+
 #popup-4-6 .modal-body-left, #popup-4-6 .modal-body-right {
     width: 50%;
     float: left;
 }
 
+#popup-4-6 .modal-body-left {
+    padding-top: 70px;
+    font-size: 22px;
+}
+
 #popup-4-6 .modal-body-right img {
-    width: 100%;
+    width: 80%;
+    margin-bottom: 20px;
 }
 
 .slide-4-7 .slide-part-right img:first-child {
