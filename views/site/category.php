@@ -251,6 +251,9 @@ $this->title = $category['title'];
                             }
                         }
                     });
+                    $('.category-title').on('click', function(){
+                        setPopupEvent('popup-home', 'popup-home', 'popup-home-close');
+                    });
                     ".$script."   
                 });
         ");
@@ -265,7 +268,8 @@ $this->title = $category['title'];
     <?= $this->render('menu') ?>
     
 </div>
-<?php 
+<?php
+echo $this->render('_popup_home');
 if ($id == 1) {
     //echo $this->render('_1_6_popup'); 
 }

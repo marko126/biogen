@@ -1515,3 +1515,38 @@ a.desc:after {
     right: 0;
     cursor: pointer;
 }
+
+#popup-home {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    padding-top: 100px;
+}
+
+#popup-home .modal-content {
+    position: relative !important;
+    width: 480px;
+    margin: auto;
+}
+
+#popup-home .modal-body {
+    font-family: Nexa Light;
+    font-size: 26px;
+    padding: 20px 40px 40px 40px !important;
+}
+
+#popup-home .modal-body img {
+    width: 164px;
+}
+
+#popup-home .modal-body p {
+    margin-bottom: 40px;
+}
+
+#popup-home .modal-body .popup-home-yes-no {
+    width: 100%;
+}
+
+#popup-home .modal-body .popup-home-yes {
+    float: right;
+}
