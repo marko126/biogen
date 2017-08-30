@@ -18,7 +18,8 @@
                 <ul>
                     <li>Natalizumab</li>
                     <li>Fingolimod</li>
-                    <li>Alemtuzumab</li>
+                    <li>Alemtuzumab</li
+                    <li>Daclizumab</li>
                 </ul>
             </div>
         </div>
