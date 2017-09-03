@@ -4,7 +4,7 @@
             <div class="col-lg-9 slide-part-left">
                 <ul>
                     <li>Et nyt symptom</li>
-                    <li>Genkomt af et tidligere symptom</li>
+                    <li>Genkomst af et tidligere symptom</li>
                     <li>Symptomet varer længere end 24 timer</li>
                     <li>Minimum en måned siden sidste attak</li>
                 </ul>
