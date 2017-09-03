@@ -5,8 +5,8 @@
                 <img src="<?= Yii::getAlias('@web') . '/images/categories/4-7-1.png' ?>" />
             </div>
             <ul>
-                <li>Ved en <span><?= strtoupper('Neurofysiologisk undersØgelse') ?></span>måles nerveimpluserne</li>
-                <li>Hastigheden i <span><?= strtoupper('nervebanerne') ?></span>udregnes</li>
+                <li>Ved en <span><?= strtoupper('Neurofysiologisk undersØgelse') ?></span> måles nerveimpluserne</li>
+                <li>Hastigheden i <span><?= strtoupper('nervebanerne') ?></span> udregnes</li>
                 <li>Forsinkelser ved <span><?= strtoupper('MS plak') ?></span> i central-nervesystemet</li>
             </ul>
         </div>
