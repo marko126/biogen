@@ -440,6 +440,10 @@ a.desc:after {
     width: 80%; 
 }
 
+.slide-1-6 .slide-container {
+    width: 100%;
+}
+
 .slide-1-6 .slide-row-1 {
     
 }
