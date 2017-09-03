@@ -32,6 +32,7 @@
                 </li>
             </ul>
         </div>
+        <img src="<?= Yii::getAlias('@web') . '/images/categories/9-1-5.png' ?>" id="baby-stroller"/>
     </div>
 </div>
     
