@@ -8,7 +8,7 @@
             <p>Er du sikker på, at du vil helt tilbage til forsiden?</p>
             <div class="popup-home-yes-no">
                 <img class="popup-home-no" onclick="$('#popup-home-close').trigger('click')" src="<?= Yii::getAlias('@web') . '/images/categories/popup-home-no.png' ?>" />
-                <a href="<?= \yii\helpers\Url::to(['site/index']) ?>">
+                <a href="<?= \yii\helpers\Url::to(['site/categories']) ?>">
                     <img class="popup-home-yes" src="<?= Yii::getAlias('@web') . '/images/categories/popup-home-yes.png' ?>" />
                 </a>
             </div>
