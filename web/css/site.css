@@ -1393,7 +1393,7 @@ a.desc:after {
 }
 
 #menu {
-    width: 90%;
+    padding-right: 30px;
     height: 125px;
     background-color: #bad0cc;
     border-radius: 5px;
