@@ -10,7 +10,7 @@
         </div>
         <div class="col-lg-4 slide-6-3-item" id="6-3-3-menu">
             <img src="<?= Yii::getAlias('@web') . '/images/categories/6-3-3.gif' ?>"/>
-            <?= strtoupper('Træthed') ?>
+            <?= strtoupper('TrÆthed') ?>
         </div>
         <div class="col-lg-4 slide-6-3-item" id="6-3-4-menu">
             <img src="<?= Yii::getAlias('@web') . '/images/categories/6-3-4.gif' ?>"/>

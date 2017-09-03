@@ -21,9 +21,9 @@ class Settings extends Component {
                 ]
             ],
             2 => [
-                'title' => 'årsager til<br>Multipel<br>Sclerose',
+                'title' => 'Årsager til<br>Multipel<br>Sclerose',
                 'subcategories' => [
-                    1 => 'årsagen til sclerose er ukendt',
+                    1 => 'Årsagen til sclerose er ukendt',
                     2 => 'risiko hos<br> slægtninge',
                     3 => 'ikke ét<br> ms gen',
                     4 => 'kendte <br>miljøfaktorer'
@@ -53,7 +53,7 @@ class Settings extends Component {
                 ]
             ],
             5 => [
-                'title' => 'Multipel<br>Sclerose<br>forløb',
+                'title' => 'Multipel<br>Sclerose<br>forlØb',
                 'subcategories' => [
                     1 => 'forløb af sclerose <br>uden behandling',
                     2 => 'former for <br>MULTIPEL SCLEROSE',
@@ -70,8 +70,8 @@ class Settings extends Component {
                     5 => 'Spasticitet <br>VED MS',
                     6 => 'Fatigue eller <br>sclerosetræthed',
                     7 => 'Fatigue eller <br>sclerosetræthed',
-                    8 => 'årsager til <br>sclerosetræthed',
-                    9 => 'årsager til <br>sclerosetræthed',
+                    8 => 'Årsager til <br>sclerosetræthed',
+                    9 => 'Årsager til <br>sclerosetræthed',
                     10 => 'behandling af <br>sclerosetræthed',
                     11 => 'vandladnings-<br>gener',
                     12 => 'vandladnings-<br>gener',

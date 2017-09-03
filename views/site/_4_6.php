@@ -6,7 +6,7 @@
             </div>
             <ul>
                 <li>Undersøgelse af rygmarvsvæsken kaldes også for <span><?= strtoupper('lumbalpunktur') ?></span></li>
-                <li>Undersøgelse af den <span><?= strtoupper('væske') ?></span>, der omgiver hjernen og rygmarve</li>
+                <li>Undersøgelse af den <span><?= strtoupper('vÆske') ?></span>, der omgiver hjernen og rygmarve</li>
                 <li>Typiske <span><?= strtoupper('antistoffer') ?></span> i rygmarvsvæsken</li>
             </ul>
         </div>
