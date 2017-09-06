@@ -160,7 +160,7 @@ $this->title = $category['title'];
                         $('.slider').slick('slickGoTo', ".max(array_keys($category['subcategories']))."-1, true);
                         $('.pull-right').attr('onclick', \"redirect('".\yii\helpers\Url::to(['site/category', 'id' => $id+1])."')\");
                     } else {
-                        if (1 == ".$id.") {
+                        if (1 == ".$id." && $('#slide-number').val() == 0) {
                             $('.pull-left').attr('style', 'display: none');
                         } else {
                             $('.pull-left').removeAttr('style');
@@ -183,6 +183,8 @@ $this->title = $category['title'];
                                 var img_src = $('#gif-1-1').attr('src');
                                 $('#gif-1-1').attr('src',img_src);
                                 $('.pull-left').attr('style', 'display: none');
+                            } else {
+                                $('.pull-left').removeAttr('style');
                             }
                             if (currentSlide == 2) {
                                 var img_src = $('#gif-1-3').attr('src');
