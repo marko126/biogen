@@ -43,14 +43,12 @@ class MsdactivationcodeController extends Controller
         if ($model->load(Yii::$app->request->post())) {
             if ($model->save()) {
                 return $this->redirect(['site/categories']);
-            } else {
-                var_dump($model->getErrors());exit();
             }
-        } else {
-            return $this->render('update', [
-                'model' => $model,
-            ]);
         }
+        
+        return $this->render('update', [
+            'model' => $model,
+        ]);
     }
 
     /**
