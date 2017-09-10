@@ -4,7 +4,7 @@
         <div class="modal-header">
             <img src="<?= Yii::getAlias('@web') . '/images/categories/popup-close.png' ?>" id="popup-6-15-close" class="popup-close"/>
             <div class="popup-info-title">
-                <?= strtoupper('Behandling af <br>aFførings-inkontinens') ?><br>
+                <?= strtoupper('Behandling af <br>aFfØrings-inkontinens') ?><br>
                 (Henvisning til specialist)
             </div>
         </div>
