@@ -38,7 +38,7 @@
             <div class="category-menu-item-container">
                 <img src="<?= Yii::getAlias('@web') . '/images/categories/Multipel-sclerose-forlob.png' ?>" />
                 <div class="category-menu-text">
-                    <?= strtoupper('Multipel Sclerose forløb') ?>
+                    <?= strtoupper('Multipel Sclerose forlØb') ?>
                 </div>
             </div>
     </div>
@@ -62,7 +62,7 @@
             <div class="category-menu-item-container">
                 <img src="<?= Yii::getAlias('@web') . '/images/categories/Hvad-kan-jeg-selv-gore.png' ?>" />
                 <div class="category-menu-text padding-30">
-                    <?= strtoupper('hvad kan jeg selv gøre') ?>
+                    <?= strtoupper('hvad kan jeg selv gØre') ?>
                 </div>
             </div>
     </div>
