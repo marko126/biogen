@@ -27,8 +27,8 @@ $(document).on('ready', function() {
 
     $('.pull-right').on('click', function(){
         if ($('#slide-number').val() == '16') {
-            //$('.slider').slick('slickGoTo', 23, false);
-            $('.slider').slick("slickNext");
+            $('.slider').slick('slickGoTo', 23, false);
+           /* $('.slider').slick("slickNext");
             $('.slider').slick('slickFilter',':not(#slide-4-2)');
             $('.slider').slick('slickFilter',':not(#slide-4-3)');
             $('.slider').slick('slickFilter',':not(#slide-4-4)');
@@ -56,8 +56,8 @@ $(document).on('ready', function() {
         } else if ($('#slide-number').val() == '30') {
             $('.slider').slick('slickGoTo', 45, false);
         } else if ($('#slide-number').val() == '35') {
-            $('.slider').slick("slickNext");
-            $('.slider').slick('slickFilter',':not(#slide-6-9)');
+            $('.slider').slick('slickGoTo', 37, false);
+            //$('.slider').slick('slickFilter',':not(#slide-6-9)');
         } else if ($('#slide-number').val() == '38') {
             $('.slider').slick('slickGoTo', 40, false);
         } else if ($('#slide-number').val() == '44' || $('#slide-number').val() == '43') {
