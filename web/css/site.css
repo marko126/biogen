@@ -305,7 +305,6 @@ a.desc:after {
 .categories-container {
     font-family: Nexa Light;
     font-size: 18px;
-    //padding: 30px 0 0 0;
     text-align: center;
 }
 
@@ -316,6 +315,8 @@ a.desc:after {
 .category-menu-item-container {
     border-bottom: 4px solid #bcd1cc;
     cursor: pointer;
+    font-size: 18px;
+    text-align: center;
 }
 
 .category-menu-item-container img {
