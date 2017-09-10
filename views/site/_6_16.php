@@ -2,7 +2,7 @@
     <div class="slide-container">
         <div class="col-lg-12 slide-row-1">
             <div class="slide-title">
-                <?= strtoupper('årsager til ændret seksualitet:') ?>
+                <?= strtoupper('Årsager til Ændret seksualitet:') ?>
             </div>
         </div>
         <div class="col-lg-12 slide-row-2">

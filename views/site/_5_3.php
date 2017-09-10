@@ -10,7 +10,7 @@
     <div class="col-lg-12 slide-row-3">
         <div class="col-lg-5 slide-part-left">
             <img src="<?= Yii::getAlias('@web') . '/images/categories/5-3-1.png' ?>" />
-            <p><?= strtoupper('inden for 10 år') ?><p>
+            <p><?= strtoupper('inden for 10 År') ?><p>
         </div>
         <div class="col-lg-6 slide-part-right">
             <p>Sekundær progressiv</p>

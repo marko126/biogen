@@ -2,7 +2,7 @@
     <div class="col-lg-12 slide-row-1">
         <div class="col-lg-4">
             <div class="slide-title">
-                <?= strtoupper('rask Nervetråd') ?>
+                <?= strtoupper('rask NervetrÅd') ?>
             </div>
             <div class="slide-1-2-body">
                 Tryk på nervetråden for at se nedbrydningens to faser. <br>

@@ -2,7 +2,7 @@
     <div class="slide-container">
         <div class="col-lg-12 slide-row-1">
             <div class="slide-title">
-                <?= strtoupper('Øget muskelspænding<br>& Stive muskler') ?>
+                <?= strtoupper('Øget muskelspÆnding<br>& Stive muskler') ?>
             </div>
         </div>
         <div class="col-lg-12 slide-row-2">

@@ -1,7 +1,7 @@
 <div class="category-item slide-6-9">
     <div class="slide-container">
         <div class="col-lg-12 slide-row-1">
-            <?= strtoupper('Primære årsager: ') ?>
+            <?= strtoupper('PrimÆre Årsager: ') ?>
         </div>
         <div class="col-lg-12 slide-row-2">
             <div class="slide-6-9-img">
@@ -11,7 +11,7 @@
 
         </div>
         <div class="col-lg-12 slide-row-3">
-            <?= strtoupper('Sekundære årsager:') ?>
+            <?= strtoupper('SekundÆre Årsager:') ?>
         </div>
         <div class="col-lg-12 slide-row-4">
             <div class="slide-6-9-item">
