@@ -1,4 +1,4 @@
-<div class="category-item slide-6-7">
+<div class="category-item slide-6-7" id="slide-6-7">
     <div class="col-lg-12 slide-row-1">
         Hjerneaktivering ved motorisk aktivitet
     </div>

@@ -41,11 +41,9 @@ AppAsset::register($this);
     </div>
 </div>
 
-<footer class="footer">
-    
+<footer class="footer" style="display: none">
         <p class="pull-left left-arrow"><img src="<?= Yii::getAlias('@web') . '/images/left-arrow.png' ?>" style="height: 30px" /></p>
         <p class="pull-right right-arrow"><img src="<?= Yii::getAlias('@web') . '/images/right-arrow.png' ?>" style="height: 30px" /></p>
-    
 </footer>
 <script type="text/javascript" src="<?= Yii::getAlias('@web') . '/slick/slick.min.js'?>"></script>    
 <!--

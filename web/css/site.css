@@ -315,6 +315,7 @@ a.desc:after {
 
 .category-menu-item-container {
     border-bottom: 4px solid #bcd1cc;
+    cursor: pointer;
 }
 
 .category-menu-item-container img {

@@ -1,4 +1,4 @@
-<div class="category-item slide-4-2">
+<div class="category-item slide-4-2" id="slide-4-2">
     <div class="col-lg-8 slide-part-left">
         <div>
             <img src="<?= Yii::getAlias('@web') . '/images/categories/4-2-1.png' ?>" />

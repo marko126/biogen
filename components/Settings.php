@@ -2,13 +2,23 @@
 namespace app\components;
  
 use yii\base\Component;
+use Yii;
 
 class Settings extends Component {
 
     public $categories;
     
-    public function init() {        
+    public $slides = [];
+    
+    public function init() {
+        $user = Yii::$app->user->identity;
         $this->categories = [
+            0 => [
+                'title' => '<div>'. strtoupper($user->getFirstName()) .'</div><div>'. strtoupper($user->getLastName()) .'</div><span>'. strtoupper($user->getHospitalName()) .'</span>',
+                'subcategories' => [
+                    1 => 'DANSK MULTIPEL <br>SCLEROSE Center'
+                ]
+            ],
             1 => [
                 'title' => 'Hvad er<br>Multipel<br>Sclerose',
                 'subcategories' => [
@@ -63,7 +73,7 @@ class Settings extends Component {
             6 => [
                 'title' => 'Behandling<br> af Multipel<br> Sclerose',
                 'subcategories' => [
-                    1 => 'rehabilitering<br> ',
+                    1 => 'rehabilitering<br>     ',
                     2 => 'Sygdomsdæmpende <br>behandling',
                     3 => 'symptom <br>behandling',
                     4 => 'Sclerose-<br>smerter',
@@ -103,5 +113,28 @@ class Settings extends Component {
                 ]
             ],
         ];
+        
+        $this->setSlides();
     }
+    
+    private function setSlides () {
+        foreach ($this->categories as $id => $category) {
+            foreach ($category['subcategories'] as $key => $subcategory) {
+                $this->slides[] = [
+                    'category' => $id,
+                    'subcategory' => $key,
+                    'title' => $subcategory
+                ];
+            }
+        }
+        
+        $this->moveElement($this->slides, 44, 29);
+
+    }
+    
+    private function moveElement(&$array, $a, $b) {
+        $out = array_splice($array, $a, 1);
+        array_splice($array, $b, 0, $out);
+    }
+
 }

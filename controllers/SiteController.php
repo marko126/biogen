@@ -114,8 +114,15 @@ class SiteController extends Controller
      */
     public function actionCategories()
     {
+        $categories = Yii::$app->settings->categories;
+        $slides = Yii::$app->settings->slides;
+        
+        $this->layout = 'categories';
+        
         return $this->render('categories', [
-            'user' => Yii::$app->user->identity
+            'user' => Yii::$app->user->identity,
+            'categories' => $categories,
+            'slides' => $slides
         ]);
     }
     

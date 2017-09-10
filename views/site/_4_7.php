@@ -1,4 +1,4 @@
-<div class="category-item slide-4-7">
+<div class="category-item slide-4-7" id="slide-4-7">
     <div class="slide-container">
         <div class="col-lg-6 slide-part-left">
             <div>

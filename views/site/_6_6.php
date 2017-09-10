@@ -1,4 +1,4 @@
-<div class="category-item slide-6-6">
+<div class="category-item slide-6-6" id="slide-6-6">
     <div class="col-lg-12 slide-row-1">
         <div class="slide-title">
             <?= strtoupper('mental og Fysisk udmattelse') ?>

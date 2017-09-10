@@ -270,22 +270,4 @@ $this->title = $category['title'];
     <?= $this->render('menu') ?>
     
 </div>
-<?php
-echo $this->render('_popup_home');
-if ($id == 1) {
-    //echo $this->render('_1_6_popup'); 
-}
-if ($id == 4) {
-    //echo $this->render('_4_6_popup'); 
-}
-if ($id == 6) {
-    //echo $this->render('_6_4_popup'); 
-    //echo $this->render('_6_5_popup'); 
-    //echo $this->render('_6_10_popup'); 
-    //echo $this->render('_6_11_popup');
-    //echo $this->render('_6_12_popup');
-    //echo $this->render('_6_14_popup');
-    //echo $this->render('_6_15_popup');
-}
-
-?>
+<?= $this->render('_popup_home') ?>

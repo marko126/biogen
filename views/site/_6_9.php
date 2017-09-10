@@ -1,4 +1,4 @@
-<div class="category-item slide-6-9">
+<div class="category-item slide-6-9" id="slide-6-9" id="slide-6-9">
     <div class="slide-container">
         <div class="col-lg-12 slide-row-1">
             <?= strtoupper('Primære årsager: ') ?>
