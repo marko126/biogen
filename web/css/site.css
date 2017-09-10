@@ -322,6 +322,7 @@ a.desc:after {
 .category-menu-item-container img {
     height: 75px;
     margin: 20px 0;
+    display: inline;
 }
 
 .category-menu-text {

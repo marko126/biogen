@@ -60,6 +60,9 @@ $this->registerJs("
             });
         });
         
+        // set categories height
+        $('.categories').attr('style', 'height: '+$('.categories').height()+'px');
+        
         // Events on category 1
         $('#popup-1-6-help').on('click', function(){
             setPopupEvent('popup-1-6', 'popup-1-6-help', 'popup-1-6-close');
@@ -199,7 +202,8 @@ $this->registerJs("
                     setPopupEvent('popup-home', 'popup-home', 'popup-home-close');
                 });
                 
-                $('.footer').show();
+                $('.footer-1').hide();
+                $('.footer-2').show();
                 $('.menu-text').show();
             } else {
                 $('.footer').hide();
