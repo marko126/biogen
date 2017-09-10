@@ -116,11 +116,11 @@ $this->registerJs("
         
         $('#slide-6-8-browse').on('click', function(){
             $('.slider').slick('slickUnfilter');
-            $('.slider').slick('slickGoTo', 35, false);
+            $('.slider').slick('slickGoTo', 36, false);
         });
         
         $('#slide-6-9-back').on('click', function(){
-            $('.slider').slick('slickGoTo', 34, false);
+            $('.slider').slick('slickGoTo', 35, false);
         });
         
         $('#popup-6-10-help').on('click', function(){
@@ -132,11 +132,11 @@ $this->registerJs("
         });
         
         $('#slide-6-11-browse').on('click', function(){
-            $('.slider').slick('slickGoTo', 38, false);
+            $('.slider').slick('slickGoTo', 39, false);
         });
         
         $('#slide-6-12-back').on('click', function(){
-            $('.slider').slick('slickGoTo', 37, false);
+            $('.slider').slick('slickGoTo', 38, false);
         });
         
         $('#popup-6-12-help').on('click', function(){
