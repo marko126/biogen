@@ -68,7 +68,15 @@ class SiteController extends Controller
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->redirect(['msdactivationcode/update']);
+            $id = Yii::$app->user->identity->getId();
+            $model = MsdActivationCode::findOne(['actcodeid' => $id]);
+            if ($model->first_login == 1) {
+                $model->first_login = 0;
+                $model->save();
+                return $this->redirect(['msdactivationcode/update']);
+            } else {
+                return $this->redirect(['site/categories']);
+            }
         }
         return $this->render('login', [
             'model' => $model,
@@ -88,7 +96,15 @@ class SiteController extends Controller
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->redirect(['msdactivationcode/update']);
+            $id = Yii::$app->user->identity->getId();
+            $model = MsdActivationCode::findOne(['actcodeid' => $id]);
+            if ($model->first_login == 1) {
+                $model->first_login = 0;
+                $model->save();
+                return $this->redirect(['msdactivationcode/update']);
+            } else {
+                return $this->redirect(['site/categories']);
+            }
         }
         return $this->render('login', [
             'model' => $model,
@@ -114,6 +130,10 @@ class SiteController extends Controller
      */
     public function actionCategories()
     {
+        if (Yii::$app->user->isGuest) {
+            return $this->redirect(['site/login']);
+        }
+        
         $categories = Yii::$app->settings->categories;
         $slides = Yii::$app->settings->slides;
         

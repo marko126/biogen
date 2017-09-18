@@ -1,6 +1,6 @@
 <div class="category-item slide-6-12" id="slide-6-12">
     <div class="slide-container">
-        <div class="col-lg-6 slide-part-left">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 slide-part-left">
             <div class="slide-6-12-title">
                 <?= strtoupper('OVERAKTIV <br>BLÆREMUSKEL') ?>
             </div>
@@ -14,9 +14,9 @@
                 </ul>
             </div>
         </div>
-        <div class="col-lg-6 slide-part-right">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 slide-part-right">
             <div class="slide-6-12-title">
-                <?= strtoupper('Ubalance mellem blære-<br>muskel & lukkemuskel') ?>
+                <?= strtoupper('Ubalance mellem blÆre-<br>muskel & lukkemuskel') ?>
             </div>
             <img src="<?= Yii::getAlias('@web') . '/images/categories/6-12-2.png' ?>" />
             <div class="slide-6-12-body">

@@ -1,6 +1,6 @@
 <div class="category-item slide-6-2">
-    <div class="col-lg-12 slide-row-1">
-        <div class="col-lg-4 slide-6-2-item">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 slide-row-1">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 slide-6-2-item">
             <div class="slide-6-2-title"><span>1.</span> linje</div>
             <div class="slide-6-2-body">
                 <ul>
@@ -12,7 +12,7 @@
                 </ul>
             </div>
         </div>
-        <div class="col-lg-4 slide-6-2-item">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 slide-6-2-item">
             <div class="slide-6-2-title"><span>2.</span> linje</div>
             <div class="slide-6-2-body">
                 <ul>
@@ -23,7 +23,7 @@
                 </ul>
             </div>
         </div>
-        <div class="col-lg-4 slide-6-2-item">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 slide-6-2-item">
             <div class="slide-6-2-title"><span>A</span>ndre</div>
             <div class="slide-6-2-body">
                 <ul>
@@ -35,14 +35,14 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-12 slide-row-2">
-        <div class="col-lg-4">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 slide-row-2">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
             <img src="<?= Yii::getAlias('@web') . '/images/categories/6-2-1.png' ?>" />
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
             <img src="<?= Yii::getAlias('@web') . '/images/categories/6-2-2.png' ?>" />
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
             <img src="<?= Yii::getAlias('@web') . '/images/categories/6-2-3.png' ?>" />
         </div>
     </div>

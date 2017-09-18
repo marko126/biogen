@@ -1,0 +1,241 @@
+@font-face { 
+    font-family: Corisande Light; 
+    src: url('fonts/CorisandeLight.ttf');
+}
+@font-face { font-family: Corisande Regular; src: url('fonts/CorisandeRegular.ttf');}
+@font-face { font-family: PantonW01-Black; src: url('fonts/panton.black-caps.ttf');}
+@font-face { font-family: PantonW01-Light; src: url('fonts/panton.light-caps.ttf');}
+
+body {
+        font-family: PantonW01-Light;
+        margin: 0;
+}
+
+.tac {
+    text-align: center;
+}
+
+.tal {
+    text-align: left;
+}
+
+.tar {
+    text-align: right;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.w33 {
+    width: 33.33%;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.input-hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+#header {
+	float: left;
+	width: 100%;
+        height: 13.32vw;
+	display: table;
+}
+
+#header-title {
+	
+}
+
+#header-img {
+	width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+}
+
+#header-home-img {
+	width: 6.66%;
+        position: absolute;
+        top: 3.35vw;
+        left: 4vw;
+        cursor: pointer;
+}
+
+#header-logo-img {
+        width: 18.46vw;
+        position: absolute;
+        top: 1.96vw;
+        left: 79vw;
+        cursor: pointer;
+}
+
+.footer {
+        font-family: Corisande Regular;
+        font-size: 3.53vw;
+        color: #69c2c3;
+        padding: 3vw 3vw;
+}
+
+.footer-line {
+    background-color: #f9f906;
+    height: 4.58vw;
+    float: left;
+    width: 100%;
+    margin-top: -1.2vw;
+}
+
+.facebook-button, .email-button, .phone-button {
+        display: inline;
+        padding: 0 4vw;
+}
+
+.facebook-button img{
+        width: 9.15vw;
+}
+
+.email-button img {
+        width: 10.29vw;
+}
+
+.phone-button img {
+        width: 8.91vw;
+}
+
+.facebook-button-footer, .email-button-footer, .phone-button-footer {
+        display: inline;
+        padding: 0 3vw;
+}
+
+.facebook-button-footer img{
+    width: 6.4vw;
+}
+
+.email-button-footer img {
+    width: 7.2vw;
+}
+
+.phone-button-footer img {
+    width: 6.24vw;
+}
+
+#next_button {
+    margin-top: -8vw;
+}
+
+.next-button, .next-button-disabled {
+	width: 63.32vw;
+	border-radius: 2vw;
+        margin: auto;
+}
+
+.next-button a, .next-button span, .next-button-disabled a, .next-button-disabled span {
+        font-size: 4.58vw;
+        font-family: PantonW01-Light;
+        text-decoration: none;
+}
+
+.next-button {
+        background-color: #f7f722;
+}
+
+.next-button-text {
+	text-align: center;
+	padding: 2.5vw;
+}
+
+.next-button a, .next-button span {
+        color: #414c58;
+        padding: 2vw 19.5vw;
+}
+
+.next-button-disabled {
+        background-color: #e7eaee;
+}
+
+.next-button-disabled a, .next-button-disabled span {
+	color: #fff;
+}
+
+.next-button-link {
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) { 
+    
+    #header {
+        height: 6.84vw;
+    }
+    
+    #header-img {
+        height: 6.84vw;
+    }
+
+    #header-home-img {
+        width: 3vw;
+        top: 1.8vw;
+        left: 1.9vw;
+    }
+
+    #header-logo-img {
+        width: 9.5vw;
+        top: 0.88vw;
+        left: 87.4vw;
+    }
+    
+    #next_button {
+        margin-top: 0vw;
+    }
+    
+    .next-button, .next-button-disabled {
+        width: 30vw;
+        border-radius: 1vw;
+    }
+    
+    .next-button-text {
+        padding: 1.5vw;
+    }
+    
+    .next-button a, .next-button span, .next-button-disabled a, .next-button-disabled span {
+        font-size: 1.76vw;
+    }
+    
+    .next-button a, .next-button span {
+        padding: 1vw 10vw;
+    }
+    
+    .footer {
+        font-size: 1.46vw;
+        padding: 1vw 1vw;
+    }
+    
+    .footer-line {
+        height: 2.2vw;
+        margin-top: 0;
+    }
+    
+    .facebook-button, .facebook-button-footer, .email-button, .email-button-footer, .phone-button, .phone-button-footer {
+        padding: 0 2.34vw;
+    }
+    
+    .facebook-button img, .facebook-button-footer img {
+        width: 3.52vw;
+    }
+    
+    .email-button img, .email-button-footer img {
+        width: 3.96vw;
+    }
+    
+    .phone-button img, .phone-button-footer img {
+        width: 3.42vw;
+    }
+}

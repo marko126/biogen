@@ -1,6 +1,6 @@
 <div class="category-item slide-6-11" id="slide-6-11">
     <div class="slide-container">
-        <div class="col-lg-5 slide-part-left">
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 slide-part-left">
             <div class="slide-6-11-title">
                 ca. 75%
             </div>
@@ -9,7 +9,7 @@
             </div>
             <img src="<?= Yii::getAlias('@web') . '/images/categories/6-11-1.png' ?>" />
         </div>
-        <div class="col-lg-7 slide-part-right">
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 slide-part-right">
             <div class="slide-6-11-item">
                 <div class="item-img">
                     <img src="<?= Yii::getAlias('@web') . '/images/categories/6-11-2.png' ?>" />

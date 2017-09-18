@@ -1,0 +1,358 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 10vw; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */                        
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    border-radius: 6vw;
+    width: 90%;
+    box-shadow: 0 0.5vw 1vw 0 rgba(0,0,0,0.2),0 1.5vw 1.7vw 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    font-family: Corisande Regular;
+    font-size: 3.59vw;
+    color: #414c58;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.modal-header {
+    padding: 2vw 3vw 0 0;
+    text-align: right;
+}
+                        
+.modal-header h3 {
+    margin: 0;
+    cursor: pointer;
+    color: #4cada6;
+}
+
+.modal-body {
+    padding: 0 7vw 1vw 7vw;
+}
+                        
+.modal-body p {
+    margin-top: 0;
+    margin-bottom: 6vw;
+}
+                        
+.modal-body-head img {
+    width:11.6vw;
+}
+                        
+.modal-body-head p {
+    margin: 3vw 0 0 3vw;
+    font-family: Corisande Regular;
+    font-size: 4.58vw;
+}
+                        
+.modal-body ul {
+    float: left;
+    width: 100%;
+    padding-left: 20vw;
+    margin-top: 0;
+    font-size: 3.43vw;
+}
+                        
+.modal-body ul li {
+    margin-bottom: 4vw;
+}
+
+.modal-footer {
+    padding: 1vw 2vw;
+    color: #4cada6;
+    text-align: center;
+}
+                        
+.modal-footer:hover {
+    cursor: pointer;
+}
+
+.ja-nej-buttons {
+    height: 10vw; 
+    margin-bottom: 4vw
+}
+
+.ja-nej-button {
+    width: 21.41vw;
+    border-radius: 2vw;
+    margin: 0 4vw;
+    cursor: pointer;
+}
+
+.ja-nej-button-text a {
+    font-family: PantonW01-Light;
+    font-size: 4.25vw;
+}
+
+#genstand-logo {
+    margin-top: 2vw;
+}
+
+#genstand-logo-img {
+    width:8.36vw;
+    float: left;
+    cursor: pointer;
+}
+
+#genstand-logo p {
+    margin-top: 2vw; 
+    margin-left: 6.64vw; 
+    font-family: Corisande Light; 
+    font-size: 3.92vw;
+    float: left;
+}
+
+#popup-home {
+    padding-top: 40vw;
+}
+
+#popup-home p {
+    font-size: 4.25vw;
+    margin-top: 6vw;
+    text-align: center;
+}
+
+.popup-info-title {
+    display: none;
+}
+
+.contact-buttons {
+    margin-bottom: 4vw;
+}
+
+#popup-genstand .modal-footer img {
+    width: 46vw; 
+    margin-bottom: 4vw;
+}
+
+@media only screen and (min-width: 768px) {
+    
+    #genstand-logo {
+        margin-top: 0;
+        float: left;
+        padding-left: 25vw;
+    }
+    
+    #genstand-logo-img {
+        width: 3.76vw;
+    }
+    
+    #genstand-logo p {
+        font-size: 1.76vw;
+        margin-top: 1vw;
+        margin-left: 2vw;
+    }
+    
+    #popup-home {
+        padding-top: 20vw;
+    }
+    
+    #popup-home p {
+        font-size: 1.86vw;
+        text-align: left;
+        margin-top: 0;
+        padding-left: 3vw;
+    }
+    
+    #popup-home .modal-content {
+        width: 42%;
+        border-radius: 2.5vw;
+    }
+    
+    #popup-home .modal-header {
+        padding: 1vw 2vw 0 0;
+        font-size: 2vw;
+        font-family: Corisande Light;
+    }
+    
+    #popup-home .modal-body {
+        padding: 0 3vw 1vw 3vw;
+    }
+    
+    .ja-nej-button {
+        width: 11vw;
+        border: 0;
+        border-radius: 1vw;
+        margin: 0 4.88vw 0 0;
+    }
+    
+    .ja-nej-buttons {
+        margin-bottom: 0;
+        height: 8vw;
+    }
+    
+    .nej {
+        margin-right: 0;
+    }
+    
+    .popup-info-title {
+        display: block;
+        font-family: PantonW01-Light;
+        font-size: 2.15vw;
+        text-align: left;
+    }
+    
+    #popup-info, #popup-disclaimer {
+    	padding-top: 5vw;
+    }
+    
+    .popup-info-title span {
+        font-family: PantonW01-Black;
+    }
+    
+    .modal-header h3 {
+        font-size: 2vw;
+        font-family: Corisande Light;
+    }
+    
+    #popup-info .modal-content {
+        font-size: 1.46vw;
+        border-radius: 1vw;
+        width: 39vw;
+    }
+    
+    #popup-info .modal-body {
+        padding: 0 3vw 1vw 3vw;
+    }
+    
+    #popup-info .modal-body p {
+        margin-bottom: 2vw;
+    }
+    
+
+    #popup-info .modal-header {
+        padding: 1vw 2vw 0 3vw;
+        margin-bottom: 2vw;
+    }
+    
+    #popup-disclaimer .modal-content {
+    	font-size: 1.26vw;
+        border-radius: 1vw;
+        width: 69vw;
+    }
+    
+    #popup-disclaimer .modal-body {
+        padding: 0 3vw 1vw 3vw;
+        font-family: Corisande Light;
+    }
+    
+    #popup-disclaimer .modal-body .regular {
+        font-family: Corisande Regular;
+        margin-bottom: 0;
+    }
+    
+    #popup-disclaimer .modal-body .address {
+        margin-bottom: 0;
+        font-size: 1.4vw;
+    }
+    
+    #popup-disclaimer .modal-body p {
+        margin-bottom: 2vw;
+    }
+    
+    #popup-disclaimer a {
+        color: #4cada6;
+    }
+    
+
+    #popup-disclaimer .modal-header {
+        padding: 1vw 2vw 0 3vw;
+        margin-bottom: 2vw;
+    }
+    
+    .facebook-button, .email-button, .phone-button {
+        padding: 0 2.34vw;
+    }
+    
+    .facebook-button img {
+        width: 3.52vw;
+    }
+    
+    .email-button img {
+        width: 3.96vw;
+    }
+    
+    .phone-button img {
+        width: 3.42vw;
+    }
+    
+    .contact-buttons {
+        margin-bottom: 1vw;
+    }
+    
+    #popup-genstand .modal-content {
+        width: 45vw;
+        border-radius: 2vw;
+    }
+    
+    .modal-body-head img {
+        width: 6.25vw;
+    }
+    
+    .modal-body-head p {
+        font-size: 2.05vw;
+        margin: 2vw 0 0 2vw;
+        font-family: PantonW01-Black;
+    }
+    
+    .modal-body ul {
+        padding-left: 2.5vw;
+        margin-top: 3vw;
+        font-size: 1.76vw;
+    }
+    
+    .modal-body ul li {
+        margin-bottom: 3vw;
+    }
+    
+    .modal-body ul li span {
+        font-size: 1.46vw;
+    }
+    
+    #popup-genstand .modal-footer img {
+        width: 23.76vw; 
+        margin-bottom: 1vw;
+    }
+    
+    #popup-genstand .modal-header {
+        padding: 1vw 2vw 0 3vw;
+    }
+    
+    #popup-genstand .modal-body {
+        padding: 0 3vw 1vw 3vw;
+    }
+    
+    .genstand-col {
+        width: 46%;
+        margin-right: 4%;
+        float: left;
+    }
+}

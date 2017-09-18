@@ -9,10 +9,10 @@ $this->title = $category['title'];
 ?>
 <div class="categories">
     <div class="row">
-        <div class="category-subtitle col-lg-8">
+        <div class="category-subtitle col-lg-8 col-md-8 col-sm-8 col-xs-8">
             <?= Html::encode(strtoupper($category['subcategories'][1])) ?>
         </div>
-        <div class="category-title col-lg-4">
+        <div class="category-title col-lg-4 col-md-4 col-sm-4 col-xs-4">
             <?= strtoupper($this->title) ?>
         </div>
     </div>

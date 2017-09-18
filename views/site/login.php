@@ -17,15 +17,15 @@ $this->params['breadcrumbs'][] = $this->title;
         'id' => 'login-form',
         'layout' => 'horizontal',
         'fieldConfig' => [
-            'template' => "{label}\n<div class=\"col-lg-12\">{input}</div>\n<div class=\"col-lg-12\">{error}</div>",
-            'labelOptions' => ['class' => 'col-lg-12'],
+            'template' => "{label}\n<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">{input}</div>\n<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">{error}</div>",
+            'labelOptions' => ['class' => 'col-lg-12 col-md-12 col-sm-12 col-xs-12'],
         ],
     ]); ?>
 
         <?= $form->field($model, 'password')->passwordInput(['placeholder' => 'Indtast aktiveringskoden']) ?>
 
         <div class="form-group">
-            <div class="col-lg-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <?= Html::submitButton('Lås op', ['class' => 'btn btn-primary login-button', 'name' => 'login-button']) ?>
                 <img src="<?= Yii::getAlias('@web') . '/images/login-key.png' ?>" class="login-key" />
             </div>

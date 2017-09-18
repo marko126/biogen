@@ -1,9 +1,9 @@
 <div class="category-item slide-6-13" id="slide-6-13">
     <div class="slide-container">
-        <div class="col-lg-4 slide-part-left">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 slide-part-left">
             <img src="<?= Yii::getAlias('@web') . '/images/categories/6-13.png' ?>" />
         </div>
-        <div class="col-lg-8 slide-part-right">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 slide-part-right">
             <ul>
                 <li>Nedsat motilitet/bevægelighed</li>
                 <li>Ændret afføringsrefleks</li>

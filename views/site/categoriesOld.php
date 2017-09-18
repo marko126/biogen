@@ -9,10 +9,10 @@ $this->title = 'DANSK MULTIPEL SCLEROSE Center';
 ?>
 <div class="categories">
     <div class="row">
-        <div class="category-subtitle col-lg-8">
+        <div class="category-subtitle col-lg-8 col-md-8 col-sm-8 col-xs-8">
             <?= Html::encode(strtoupper($this->title)) ?>
         </div>
-        <div class="category-title col-lg-4">
+        <div class="category-title col-lg-4 col-md-4 col-sm-4 col-xs-4">
             <div>
                 <?= strtoupper($user->getFirstName()) ?>
             </div>
@@ -27,7 +27,7 @@ $this->title = 'DANSK MULTIPEL SCLEROSE Center';
     </div>
 </div>
 <div class="categories-container">
-    <div class="category-menu-item col-lg-3">
+    <div class="category-menu-item col-lg-3 col-md-3 col-sm-3 col-xs-3">
         <a href="<?= Url::to(['site/category', 'id' => 1]) ?>">
             <div class="category-menu-item-container">
                 <img src="<?= Yii::getAlias('@web') . '/images/categories/Hvad-er-multipel-sclerose.png' ?>" />
@@ -37,7 +37,7 @@ $this->title = 'DANSK MULTIPEL SCLEROSE Center';
             </div>
         </a>
     </div>
-    <div class="category-menu-item col-lg-3">
+    <div class="category-menu-item col-lg-3 col-md-3 col-sm-3 col-xs-3">
         <a href="<?= Url::to(['site/category', 'id' => 2]) ?>">
             <div class="category-menu-item-container">
                 <img src="<?= Yii::getAlias('@web') . '/images/categories/Arsager-til-multipel-sclerose.png' ?>" />
@@ -47,7 +47,7 @@ $this->title = 'DANSK MULTIPEL SCLEROSE Center';
             </div>
         </a>
     </div>
-    <div class="category-menu-item col-lg-3">
+    <div class="category-menu-item col-lg-3 col-md-3 col-sm-3 col-xs-3">
         <a href="<?= Url::to(['site/category', 'id' => 3]) ?>">
             <div class="category-menu-item-container">
                 <img src="<?= Yii::getAlias('@web') . '/images/categories/Hvordan-rammer-ms.png' ?>" />
@@ -57,7 +57,7 @@ $this->title = 'DANSK MULTIPEL SCLEROSE Center';
             </div>
         </a>
     </div>
-    <div class="category-menu-item col-lg-3">
+    <div class="category-menu-item col-lg-3 col-md-3 col-sm-3 col-xs-3">
         <a href="<?= Url::to(['site/category', 'id' => 4]) ?>">
             <div class="category-menu-item-container">
                 <img src="<?= Yii::getAlias('@web') . '/images/categories/Hvordan-stilles-diagnosen.png' ?>" />
@@ -67,7 +67,7 @@ $this->title = 'DANSK MULTIPEL SCLEROSE Center';
             </div>
         </a>
     </div>
-    <div class="category-menu-item col-lg-3">
+    <div class="category-menu-item col-lg-3 col-md-3 col-sm-3 col-xs-3">
         <a href="<?= Url::to(['site/category', 'id' => 5]) ?>">
             <div class="category-menu-item-container">
                 <img src="<?= Yii::getAlias('@web') . '/images/categories/Multipel-sclerose-forlob.png' ?>" />
@@ -77,7 +77,7 @@ $this->title = 'DANSK MULTIPEL SCLEROSE Center';
             </div>
         </a>
     </div>
-    <div class="category-menu-item col-lg-3">
+    <div class="category-menu-item col-lg-3 col-md-3 col-sm-3 col-xs-3">
         <a href="<?= Url::to(['site/category', 'id' => 6]) ?>">
             <div class="category-menu-item-container">
                 <img src="<?= Yii::getAlias('@web') . '/images/categories/Behandling-af-multipel-sclerose.png' ?>" />
@@ -87,7 +87,7 @@ $this->title = 'DANSK MULTIPEL SCLEROSE Center';
             </div>
         </a>
     </div>
-    <div class="category-menu-item col-lg-3">
+    <div class="category-menu-item col-lg-3 col-md-3 col-sm-3 col-xs-3">
         <a href="<?= Url::to(['site/category', 'id' => 7]) ?>">
             <div class="category-menu-item-container">
                 <img src="<?= Yii::getAlias('@web') . '/images/categories/Multipel-sclerose-symptomer.png' ?>" />
@@ -97,7 +97,7 @@ $this->title = 'DANSK MULTIPEL SCLEROSE Center';
             </div>
         </a>
     </div>
-    <div class="category-menu-item col-lg-3">
+    <div class="category-menu-item col-lg-3 col-md-3 col-sm-3 col-xs-3">
         <a href="<?= Url::to(['site/category', 'id' => 8]) ?>">
             <div class="category-menu-item-container">
                 <img src="<?= Yii::getAlias('@web') . '/images/categories/Hvad-kan-jeg-selv-gore.png' ?>" />

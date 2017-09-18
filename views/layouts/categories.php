@@ -47,15 +47,15 @@ AppAsset::register($this);
         <p class="pull-left">
             <?php if (Yii::$app->controller->id == 'site' && Yii::$app->controller->action->id == 'categories'): ?>
             <a href="<?= Url::toRoute('msdactivationcode/update') ?>">
-                <img src="<?= Yii::getAlias('@web') . '/images/categories/settings-icon.png' ?>" style="height: 30px" />
+                <img src="<?= Yii::getAlias('@web') . '/images/categories/settings-icon.png' ?>" />
             </a>
             <?php endif; ?>
         </p>
-        <p class="pull-right">I samarbejde med<img src="<?= Yii::getAlias('@web') . '/images/Biogen-logo.png' ?>" style="height: 40px" /></p>
+        <p class="pull-right">I samarbejde med<img src="<?= Yii::getAlias('@web') . '/images/Biogen-logo.png' ?>" /></p>
     </div>
     <div class="footer-2" style="display: none">
-        <p class="pull-left left-arrow"><img src="<?= Yii::getAlias('@web') . '/images/left-arrow.png' ?>" style="height: 30px" /></p>
-        <p class="pull-right right-arrow"><img src="<?= Yii::getAlias('@web') . '/images/right-arrow.png' ?>" style="height: 30px" /></p>
+        <p class="pull-left left-arrow"><img src="<?= Yii::getAlias('@web') . '/images/left-arrow.png' ?>" /></p>
+        <p class="pull-right right-arrow"><img src="<?= Yii::getAlias('@web') . '/images/right-arrow.png' ?>" /></p>
     </div>
 </footer>
 <script type="text/javascript" src="<?= Yii::getAlias('@web') . '/slick/slick.min.js'?>"></script>    

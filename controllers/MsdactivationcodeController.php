@@ -37,10 +37,15 @@ class MsdactivationcodeController extends Controller
      */
     public function actionUpdate()
     {
+        if (Yii::$app->user->isGuest) {
+            return $this->redirect(['site/login']);
+        }
+        
         $id = Yii::$app->user->identity->getId();
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post())) {
+            
             if ($model->save()) {
                 return $this->redirect(['site/categories']);
             }

@@ -1,12 +1,12 @@
 <div class="category-item slide-6-5" id="slide-6-6">
     <div class="slide-container">
-        <div class="col-lg-12 slide-row-1">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 slide-row-1">
             <div class="slide-title">
                 <?= strtoupper('Øget muskelspÆnding<br>& Stive muskler') ?>
             </div>
         </div>
-        <div class="col-lg-12 slide-row-2">
-            <div class="col-lg-7">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 slide-row-2">
+            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
                 <div class="slide-6-5-title">
                     Følgerne ved spasticitet:
                 </div>

@@ -9,10 +9,10 @@ $this->title = 'DANSK MULTIPEL SCLEROSE Center';
 ?>
 <div class="categories">
     <div class="row">
-        <div class="category-subtitle col-lg-8">
+        <div class="category-subtitle col-lg-8 col-md-8 col-sm-8 col-xs-8">
             <?= Html::encode(strtoupper($this->title)) ?>
         </div>
-        <div class="category-title col-lg-4">
+        <div class="category-title col-lg-4 col-md-4 col-sm-4 col-xs-4">
             <div>
                 <?= strtoupper($user->getFirstName()) ?>
             </div>
@@ -86,7 +86,7 @@ $this->registerJs("
         });
                     
         $('#left-top').on('click', function(){
-            $('.slider').slick('slickUnfilter');
+            //$('.slider').slick('slickUnfilter');
             $('.slider').slick('slickGoTo', 17, false);
         });
                     
@@ -193,7 +193,9 @@ $this->registerJs("
             $('#page-number').val(slides[currentSlide]['category']);
             
             // set category title and subtitle
+            $('.category-title').html('');
             $('.category-title').html(category['title'].toUpperCase());
+            $('.category-subtitle').html('');
             $('.category-subtitle').html(slides[currentSlide]['title'].toUpperCase());
             
             if (currentSlide != 0) {
@@ -206,7 +208,8 @@ $this->registerJs("
                 $('.footer-2').show();
                 $('.menu-text').show();
             } else {
-                $('.footer').hide();
+                $('.footer-2').hide();
+                $('.footer-1').show();
                 $('.menu-text').hide();
             }
 

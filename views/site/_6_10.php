@@ -1,6 +1,6 @@
 <div class="category-item slide-6-10" id="slide-6-10">
     <div class="slide-container">
-        <div class="col-lg-12 slide-row-1">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 slide-row-1">
             <div class="slide-6-10-item">
                 <img src="<?= Yii::getAlias('@web') . '/images/categories/6-10-1.png' ?>" />
                 Motion
@@ -14,7 +14,7 @@
                 Medicinsk behandling
             </div>
         </div>
-        <div class="col-lg-12 slide-row-2">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 slide-row-2">
             <div class="slide-6-10-item">
                 <img src="<?= Yii::getAlias('@web') . '/images/categories/6-10-4.png' ?>" />
                 Hvil

@@ -1,5 +1,5 @@
 <div class="category-item slide-9-1">
-    <div class="col-lg-12 slide-row-1">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 slide-row-1">
         <div class="slide-9-1-item">
             <img src="<?= Yii::getAlias('@web') . '/images/categories/9-1-1.png' ?>" />
             <ul>

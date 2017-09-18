@@ -1,7 +1,7 @@
 <div class="category-item slide-6-17" id="slide-6-17">
     <div class="slide-container">
-        <div class="col-lg-6 slide-part-left">
-            <div class="col-lg-7 item-body">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 slide-part-left">
+            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 item-body">
                 <div class="item-title">
                     <?= strtoupper('MÆND') ?>
                 </div>
@@ -15,12 +15,12 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-5 item-img">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 item-img">
                 <img src="<?= Yii::getAlias('@web') . '/images/categories/6-17-1.png' ?>" />
             </div>
         </div>
-        <div class="col-lg-6 slide-part-right">
-            <div class="col-lg-7 item-body">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 slide-part-right">
+            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 item-body">
                 <div class="item-title">
                     <?= strtoupper('kvinder') ?>
                 </div>
@@ -33,7 +33,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-5 item-img">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 item-img">
                 <img src="<?= Yii::getAlias('@web') . '/images/categories/6-17-2.png' ?>" />
             </div>
         </div>

@@ -1,12 +1,12 @@
 <div class="category-item slide-6-16" id="slide-6-16">
     <div class="slide-container">
-        <div class="col-lg-12 slide-row-1">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 slide-row-1">
             <div class="slide-title">
                 <?= strtoupper('Årsager til Ændret seksualitet:') ?>
             </div>
         </div>
-        <div class="col-lg-12 slide-row-2">
-            <div class="col-lg-7 slide-part-left">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 slide-row-2">
+            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 slide-part-left">
                 <div class="slide-6-16-item">
                     <div class="item-img">
                         <img src="<?= Yii::getAlias('@web') . '/images/categories/6-16-1.png' ?>" />
@@ -40,7 +40,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-5 slide-part-right">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 slide-part-right">
                 <div class="slide-6-16-item">
                     <div class="item-img">
                         <img src="<?= Yii::getAlias('@web') . '/images/categories/6-16-5.png' ?>" />
