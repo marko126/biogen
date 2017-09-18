@@ -52,6 +52,9 @@ $this->registerJs("
         // get category subtitle when page is loaded
         $('.category-subtitle').html(categories[0]['subcategories'][1].toUpperCase());
         
+        // set categories height
+        $('.category-subtitle').attr('style', 'height: '+$('.category-subtitle').height()+'px');
+        
         // animate menu
         $('.menu-text').click(function(){
             //$('#menu').slideToggle(1000);
@@ -59,9 +62,6 @@ $this->registerJs("
                 width: 'toggle'
             });
         });
-        
-        // set categories height
-        $('.categories').attr('style', 'height: '+$('.categories').height()+'px');
         
         // Events on category 1
         $('#popup-1-6-help').on('click', function(){
@@ -193,10 +193,8 @@ $this->registerJs("
             $('#page-number').val(slides[currentSlide]['category']);
             
             // set category title and subtitle
-            $('.category-title').html('');
-            $('.category-title').html(category['title'].toUpperCase());
-            $('.category-subtitle').html('');
-            $('.category-subtitle').html(slides[currentSlide]['title'].toUpperCase());
+            $('.category-title').empty().append('<div class=\"category-title-div\">'+category['title'].toUpperCase()+'</div>');
+            $('.category-subtitle').empty().append('<div class=\"category-subtitle-div\">'+slides[currentSlide]['title'].toUpperCase()+'</div>');
             
             if (currentSlide != 0) {
                 // get popup home
@@ -241,6 +239,10 @@ $this->registerJs("
             
             if (currentSlide == 22) {
                 reloadImg('#gif-4-7');
+            }
+            
+            if (currentSlide == 26) {
+                
             }
             
             if (currentSlide == 31) {

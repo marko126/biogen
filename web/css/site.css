@@ -291,8 +291,9 @@ a.desc:after {
 .category-title {
     font-size: 40px;
     color: #bcd0cb;
-    line-height: 37px;
+    line-height: 40px;
     text-align: right;
+    padding-top: 2px;
 }
 
 .category-title span {
@@ -303,6 +304,7 @@ a.desc:after {
     font-size: 65px;
     color: #000;
     line-height: 63px;
+    padding-top: 2px;
 }
 
 .category-subtitle span {
@@ -1605,7 +1607,7 @@ a.desc:after {
 
     .category-title {
         font-size: 36px;
-        line-height: 30px;
+        line-height: 36px;
     }
 
     .category-title span {
