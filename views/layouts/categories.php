@@ -43,7 +43,7 @@ AppAsset::register($this);
 </div>
 
 <footer class="footer">
-    <div class="footer-1">
+    <div class="footer-1" id="footer-1">
         <p class="pull-left">
             <?php if (Yii::$app->controller->id == 'site' && Yii::$app->controller->action->id == 'categories'): ?>
             <a href="<?= Url::toRoute('msdactivationcode/update') ?>">
@@ -53,9 +53,9 @@ AppAsset::register($this);
         </p>
         <p class="pull-right">I samarbejde med<img src="<?= Yii::getAlias('@web') . '/images/Biogen-logo.png' ?>" /></p>
     </div>
-    <div class="footer-2" style="display: none">
-        <p class="pull-left left-arrow"><img src="<?= Yii::getAlias('@web') . '/images/left-arrow.png' ?>" /></p>
-        <p class="pull-right right-arrow"><img src="<?= Yii::getAlias('@web') . '/images/right-arrow.png' ?>" /></p>
+    <div class="footer-2" id="footer-2" style="display: none">
+        <p class="pull-left left-arrow"><img src="<?= Yii::getAlias('@web') . '/images/left-arrow.png' ?>" class="left-img" /></p>
+        <p class="pull-right right-arrow"><img src="<?= Yii::getAlias('@web') . '/images/right-arrow.png' ?>" class="right-img"/></p>
     </div>
 </footer>
 <script type="text/javascript" src="<?= Yii::getAlias('@web') . '/slick/slick.min.js'?>"></script>    

@@ -12,7 +12,10 @@ $(document).on('ready', function() {
     });
     
     $('.pull-left').on('click', function(){
-        if ($('#slide-number').val() == '23') {
+        if ($('#slide-number').val() == '2') {
+            setDefaultNerves();
+            $('.slider').slick("slickPrev");
+        } else if($('#slide-number').val() == '23') {
             $('.slider').slick('slickGoTo', 16, false);
         } else if($('#slide-number').val() == '37') {
             $('.slider').slick('slickGoTo', 35, false);
@@ -26,33 +29,11 @@ $(document).on('ready', function() {
     });
 
     $('.pull-right').on('click', function(){
-        if ($('#slide-number').val() == '16') {
+        if ($('#slide-number').val() == '2') {
+            setDefaultNerves();
+            $('.slider').slick("slickNext");
+        } else if ($('#slide-number').val() == '16') {
             $('.slider').slick('slickGoTo', 23, false);
-           /* $('.slider').slick("slickNext");
-            $('.slider').slick('slickFilter',':not(#slide-4-2)');
-            $('.slider').slick('slickFilter',':not(#slide-4-3)');
-            $('.slider').slick('slickFilter',':not(#slide-4-4)');
-            $('.slider').slick('slickFilter',':not(#slide-4-5)');
-            $('.slider').slick('slickFilter',':not(#slide-4-6)');
-            $('.slider').slick('slickFilter',':not(#slide-4-7)');
-        //} else if ($('#slide-number').val() == '28') {
-            //$('.slider').slick('slickGoTo', 44, false);
-            //$('.slider').slick("slickNext");
-            /*$('.slider').slick('slickFilter',':not(#slide-6-3)');
-            $('.slider').slick('slickFilter',':not(#slide-6-4)');
-            $('.slider').slick('slickFilter',':not(#slide-6-5)');
-            $('.slider').slick('slickFilter',':not(#slide-6-6)');
-            $('.slider').slick('slickFilter',':not(#slide-6-7)');
-            $('.slider').slick('slickFilter',':not(#slide-6-8)');
-            $('.slider').slick('slickFilter',':not(#slide-6-9)');
-            $('.slider').slick('slickFilter',':not(#slide-6-10)');
-            $('.slider').slick('slickFilter',':not(#slide-6-11)');
-            $('.slider').slick('slickFilter',':not(#slide-6-12)');
-            $('.slider').slick('slickFilter',':not(#slide-6-13)');
-            $('.slider').slick('slickFilter',':not(#slide-6-14)');
-            $('.slider').slick('slickFilter',':not(#slide-6-15)');
-            $('.slider').slick('slickFilter',':not(#slide-6-16)');
-            $('.slider').slick('slickFilter',':not(#slide-6-17)');*/
         } else if ($('#slide-number').val() == '30') {
             $('.slider').slick('slickGoTo', 45, false);
         } else if ($('#slide-number').val() == '35') {
@@ -115,6 +96,8 @@ function setPopupEvent(name, btnId, closeId) {
     // Get the <span> element that closes the modal
     var span = document.getElementById(closeId);
     var span2 = document.getElementById(name);
+    
+    var footer = document.getElementById('footer-2');
 
     // When the user clicks the button, open the modal 
     //btn.onclick = function() {
@@ -128,18 +111,24 @@ function setPopupEvent(name, btnId, closeId) {
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
-        //console.log(event.target.id+' == '+modal.id);
-        if (event.target == modal) {
-            
+        //console.log($(event.target).attr('class')+' == '+modal.tagName);
+        if (event.target == modal || $.inArray($(event.target).attr('class'), ['left-img', 'right-img']) > -1) {
+            console.log($(event.target).attr('class'));
             modal.style.display = "none";
         }
     }
+    
 }
 
 function toggleNerves() {
     $('.toggle').fadeToggle();
     //$('#damaged-myelin').fadeToggle(200);
     //$('#broken-nerve-wire').fadeToggle(200);
+}
+function setDefaultNerves() {
+    if ($('#damaged-myelin').attr('style') == 'display: none;') {
+        toggleNerves();
+    }
 }
 
 function redirect(url) {

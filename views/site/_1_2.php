@@ -31,7 +31,7 @@
         <div class="slide-row-3 toggle" id="broken-nerve-wire">
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                 <div class="slide-1-2-title">
-                    <?= strtoupper('Nedbrudt Nervetråd') ?>
+                    <?= strtoupper('Nedbrudt NervetrÅd') ?>
                 </div>
                 <div class="slide-1-2-body">
                     Immunsystemet angriber hjernens fedtisolering

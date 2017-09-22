@@ -31,7 +31,7 @@ body {
     min-height: 100%;
     height: auto;
     margin: 0 auto -44px;
-    padding: 20px 0 44px;
+    padding: 0 0 44px;
 }
 
 .wrap > .container {
@@ -293,7 +293,7 @@ a.desc:after {
     color: #bcd0cb;
     line-height: 40px;
     text-align: right;
-    padding-top: 2px;
+    padding-top: 20px;
 }
 
 .category-title span {
@@ -304,7 +304,7 @@ a.desc:after {
     font-size: 65px;
     color: #000;
     line-height: 63px;
-    padding-top: 2px;
+    padding-top: 20px;
 }
 
 .category-subtitle span {
@@ -1607,7 +1607,7 @@ a.desc:after {
 
     .category-title {
         font-size: 36px;
-        line-height: 36px;
+        line-height: 30px;
     }
 
     .category-title span {
@@ -2480,7 +2480,7 @@ a.desc:after {
     }
 
     #popup-home .modal-content {
-        width: 450px;
+        width: 450px !important;
     }
     
     .popup-help-icon, .popup-info-icon, .browse-icon, .back-icon {
