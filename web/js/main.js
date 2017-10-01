@@ -50,6 +50,7 @@ $(document).on('ready', function() {
     
     $('.cat-1').on('click', function(){
         $('.slider').slick('slickGoTo', 1, true);
+        reloadImg('#gif-1-1');
     });
     
     $('.cat-2').on('click', function(){
@@ -139,3 +140,8 @@ function redirect(url) {
 function goToSlide(currentSlide, slideToGo) {
     
 }
+
+function reloadImg (id) {
+        var img_src = $(id).attr('src');
+        $(id).attr('src',img_src);
+    }

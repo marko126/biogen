@@ -11,8 +11,8 @@
     src: url('fonts/DinProRegular.ttf'), url('fonts/DinProRegular.eot'), url('fonts/DinProRegular.eot?#iefix') format('embedded-opentype');
 }
 @font-face { 
-    font-family: Helvetica Neue LT Std; 
-    src: url('fonts/HelveticaNeueLTStd.ttf'), url('fonts/HelveticaNeueLTStd.eot'), url('fonts/HelveticaNeueLTStd.eot?#iefix') format('embedded-opentype');
+    font-family: "Helvetica Neue LT Std"; 
+    src: url('fonts/HelveticaNeueLTStd.ttf');
 }
 @font-face { 
     font-family: Mari Bold; 
@@ -139,7 +139,8 @@ body {
 
 .title-update-data {
     font-size: 72px;
-    font-family: Helvetica Neue LT Std;
+    font-family: "Helvetica Neue LT Std", "Work Sans";
+    font-weight: 800;
     color: #bcd0cb;
     text-align: center;
 }
@@ -284,8 +285,10 @@ a.desc:after {
 }
 
 .categories {
-    font-family: Helvetica Neue LT Std;
+    font-family: "Helvetica Neue LT Std", "Work Sans";
+    font-weight: 800;
     border-bottom: 3px solid #324553;
+    height: 149px;
 }
 
 .category-title {
@@ -304,6 +307,10 @@ a.desc:after {
     font-size: 65px;
     color: #000;
     line-height: 63px;
+    /*padding-top: 20px;*/
+}
+
+.category-subtitle-div {
     padding-top: 20px;
 }
 
@@ -387,6 +394,10 @@ a.desc:after {
     color: #8cc540;
 }
 
+#damaged-myelin .slide-title {
+    color: #35c5e3;
+}
+
 #slide-1-2-toggler {
     cursor: pointer;
 }
@@ -400,11 +411,12 @@ a.desc:after {
 }
 
 .slide-1-2 .slide-row-2 .slide-1-2-title {
-    color: #2da9e1;
+    color: #35c5e3;
 }
 
 .slide-1-2 .slide-row-3 .slide-1-2-title {
     color: #e14b12;
+    font-family: Nexa Bold;
 }
 
 .slide-1-2 .slide-row-1, .slide-1-2 .slide-row-2, .slide-1-2 .slide-row-3 {
@@ -1581,7 +1593,7 @@ a.desc:after {
 @media screen and (max-width: 1200px) {
     .wrap {
         margin: 0 auto -24px;
-        padding: 10px 0 24px;
+        padding: 0 0 24px;
     }
 
     .footer .pull-right {
@@ -1603,6 +1615,7 @@ a.desc:after {
 
     .categories {
         border-bottom: 2px solid #324553;
+        height: 118px;
     }
 
     .category-title {
@@ -1908,7 +1921,11 @@ a.desc:after {
 @media screen and (max-width: 1024px) {
     .wrap {
         margin: 0 auto -24px;
-        padding: 10px 0 24px;
+        padding: 0 0 24px;
+    }
+    
+    .categories {
+        height: 114px;
     }
     
     .footer {

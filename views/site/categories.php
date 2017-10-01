@@ -4,24 +4,26 @@
 
 use yii\helpers\Html;
 use yii\helpers\Url;
+use app\models\MsdActivationCode;
 
-$this->title = 'DANSK MULTIPEL SCLEROSE Center';
+$this->title = $user->getSectionName();
+$title_div = '<div class="category-subtitle-div">'.strtoupper(MsdActivationCode::strtoupperDanishLetters($this->title)).'</div>';
 ?>
 <div class="categories">
     <div class="row">
         <div class="category-subtitle col-lg-8 col-md-8 col-sm-8 col-xs-8">
-            <?= Html::encode(strtoupper($this->title)) ?>
+            <?= $title_div ?>
         </div>
         <div class="category-title col-lg-4 col-md-4 col-sm-4 col-xs-4">
             <div>
-                <?= strtoupper($user->getFirstName()) ?>
+                <?= strtoupper(MsdActivationCode::strtoupperDanishLetters($user->getFirstName())) ?>
             </div>
             <div>
-                <?= strtoupper($user->getLastName()) ?>
+                <?= strtoupper(MsdActivationCode::strtoupperDanishLetters($user->getLastName())) ?>
             </div>
             
             <span>
-                <?= strtoupper($user->getHospitalName()) ?>
+                <?= strtoupper(MsdActivationCode::strtoupperDanishLetters($user->getHospitalName())) ?>
             </span>
         </div>
     </div>
@@ -50,10 +52,10 @@ $this->registerJs("
         var slides = ".json_encode($slides).";
         
         // get category subtitle when page is loaded
-        $('.category-subtitle').html(categories[0]['subcategories'][1].toUpperCase());
+        //$('.category-subtitle').html(categories[0]['subcategories'][1].toUpperCase());
         
         // set categories height
-        $('.category-subtitle').attr('style', 'height: '+$('.category-subtitle').height()+'px');
+        //$('.category-subtitle').attr('style', 'height: '+$('.category-subtitle').height()+'px');
         
         // animate menu
         $('.menu-text').click(function(){
@@ -69,7 +71,11 @@ $this->registerJs("
         });
 
         $('#slide-1-2-toggler').on('click', function(){
-            toggleNerves();
+            if ($('#slide-1-2-myelin-nerve').attr('style') == 'display: none') {
+                $('#slide-1-2-myelin-nerve').removeAttr('style');
+            } else {
+                toggleNerves();
+            }
         });
         
         // Events on category 4
@@ -269,8 +275,4 @@ $this->registerJs("
         
     });
     
-    function reloadImg (id) {
-        var img_src = $(id).attr('src');
-        $(id).attr('src',img_src);
-    }
 ");

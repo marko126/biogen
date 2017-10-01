@@ -19,17 +19,23 @@ AppAsset::register($this);
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     
+    <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="<?= Yii::getAlias('@web') . '/slick/slick.css' ?>"/>
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="<?= Yii::getAlias('@web') . '/slick/slick-theme.css' ?>"/>
     <link rel="stylesheet" type="text/css" href="<?= Yii::getAlias('@web') . '/css/popup.css' ?>"/>
-    
-    <script src="<?= Yii::getAlias('@web') . '/js/jquery-2.2.4.min.js' ?>" type="text/javascript"></script>
+    <!--[if lt IE 9]>
+        <script src="<?= Yii::getAlias('@web') . '/js/jquery-1.9.0.min.js' ?>"></script>
+    <![endif]-->
+    <!--[if gte IE 9]><!-->
+        <script src="<?= Yii::getAlias('@web') . '/js/jquery-2.2.4.min.js' ?>" type="text/javascript"></script>
+    <!--<![endif]-->
     <!--
     <script src="//code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
     -->
     <script type="text/javascript" src="<?= Yii::getAlias('@web') . '/js/main.js' ?>" ></script>
     <?php $this->head() ?>
+    <script type="text/javascript" src="<?= Yii::getAlias('@web') . '/js/respond.js' ?>" ></script>
 </head>
 <body>
 <?php $this->beginBody() ?>

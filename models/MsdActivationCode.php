@@ -131,6 +131,21 @@ class MsdActivationCode extends \yii\db\ActiveRecord implements IdentityInterfac
         return $this->hospital_name;
     }
     
+    /**
+     * 
+     * @return type
+     */
+    public function getSectionName() {
+        return $this->section_name;
+    }
+    
+    public static function strtoupperDanishLetters($string){
+        $string = str_replace('å', 'Å', $string);
+        $string = str_replace('æ', 'Æ', $string);
+        $string = str_replace('ø', 'Ø', $string);
+        return $string;
+    }
+    
     public function afterFind() {
         if (isset($this->actcodeid)) {
             $name = explode(' ', $this->doctor_name);
