@@ -36,6 +36,9 @@ AppAsset::register($this);
     <script type="text/javascript" src="<?= Yii::getAlias('@web') . '/js/main.js' ?>" ></script>
     <?php $this->head() ?>
     <script type="text/javascript" src="<?= Yii::getAlias('@web') . '/js/respond.js' ?>" ></script>
+    <!--[if IE]>
+        <link rel="stylesheet" type="text/css" href="/css/site-ie.css"/>
+    <![endif]-->
 </head>
 <body>
 <?php $this->beginBody() ?>

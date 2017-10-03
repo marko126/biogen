@@ -69,10 +69,11 @@ $this->registerJs("
         $('#popup-1-6-help').on('click', function(){
             setPopupEvent('popup-1-6', 'popup-1-6-help', 'popup-1-6-close');
         });
-
+        
         $('#slide-1-2-toggler').on('click', function(){
-            if ($('#slide-1-2-myelin-nerve').attr('style') == 'display: none') {
-                $('#slide-1-2-myelin-nerve').removeAttr('style');
+            var slide_1_2_myelin_nerve = document.getElementById('slide-1-2-myelin-nerve');
+            if (slide_1_2_myelin_nerve.hasAttribute('style') && slide_1_2_myelin_nerve.getAttribute('style') == 'display: none;') {
+                slide_1_2_myelin_nerve.removeAttribute('style');
             } else {
                 toggleNerves();
             }
@@ -204,7 +205,7 @@ $this->registerJs("
             
             if (currentSlide != 0) {
                 // get popup home
-                $('.category-title').on('click', function(){
+                $('.category-subtitle').on('click', function(){
                     setPopupEvent('popup-home', 'popup-home', 'popup-home-close');
                 });
                 
@@ -218,18 +219,18 @@ $this->registerJs("
             }
 
             if (currentSlide == 1) {
-                reloadImg('#gif-1-1');
+                reloadImg('gif-1-1');
                 $('.pull-left').attr('style', 'display: none');
             } else {
                 $('.pull-left').removeAttr('style');
             }
             
             if (currentSlide == 3) {
-                reloadImg('#gif-1-3');
+                reloadImg('gif-1-3');
             }
             
             if (currentSlide == 6) {
-                reloadImg('#gif-1-6');
+                reloadImg('gif-1-6');
             }
             
             if ((currentSlide > 16 && currentSlide < 23) || (currentSlide > 30 && currentSlide < 44)) {
@@ -244,7 +245,7 @@ $this->registerJs("
             }
             
             if (currentSlide == 22) {
-                reloadImg('#gif-4-7');
+                reloadImg('gif-4-7');
             }
             
             if (currentSlide == 26) {
@@ -252,15 +253,15 @@ $this->registerJs("
             }
             
             if (currentSlide == 31) {
-                reloadImg('#gif-6-4');
+                reloadImg('gif-6-4');
             }
             
             if (currentSlide == 33) {
-                reloadImg('#gif-6-6');
+                reloadImg('gif-6-6');
             }
             
             if (currentSlide == 35) {
-                reloadImg('#gif-6-8');
+                reloadImg('gif-6-8');
                 
             }
             

@@ -50,7 +50,7 @@ $(document).on('ready', function() {
     
     $('.cat-1').on('click', function(){
         $('.slider').slick('slickGoTo', 1, true);
-        reloadImg('#gif-1-1');
+        reloadImg('gif-1-1');
     });
     
     $('.cat-2').on('click', function(){
@@ -142,6 +142,7 @@ function goToSlide(currentSlide, slideToGo) {
 }
 
 function reloadImg (id) {
-        var img_src = $(id).attr('src');
-        $(id).attr('src',img_src);
-    }
+    var img_src = $('#'+id).attr('src');
+    var default_src = img_src.split('?a=');
+    $('#'+id).attr('src', default_src[0]+"?a="+Math.random());
+}

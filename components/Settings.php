@@ -53,7 +53,7 @@ class Settings extends Component {
                 'title' => ' Hvordan <br>stilles <br>diagnosen',
                 'subcategories' => [
                     1 => 'diagnose/ <br>UDREDNING',
-                    2 => 'sygehistorie & <br><span>Neurologisk undersøgelse<span>',
+                    2 => 'sygehistorie & <br><span>Neurologisk undersøgelse</span>',
                     3 => 'MR <br>Scanning',
                     4 => 'MR billeder <br>med plak',
                     5 => 'kontrastopladning <br>i plak',
